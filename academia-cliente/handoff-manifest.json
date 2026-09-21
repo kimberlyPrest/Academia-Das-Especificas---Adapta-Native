@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "adapta-cliente-handoff/v1",
+  "phase": 1,
+  "versions": {
+    "adapta": "0.9.3",
+    "adaptaCliente": "0.9.3"
+  },
+  "generatedAt": "2026-09-21",
+  "project": "academia-das-especificas",
+  "files": [
+    {
+      "path": ".claude/settings.json",
+      "classification": "template-publico",
+      "sha256": "914f1e1b8c481c56f6383fe4ae281cf8304b2f3ed4c9260926dcbe045f93b146"
+    },
+    {
+      "path": "01_projeto/constituicao.md",
+      "classification": "template-publico",
+      "sha256": "f7f09883cc56e16916027f1ee7324ec63b326f78e39595429e42143b8cf82dbc"
+    },
+    {
+      "path": "01_projeto/objetivo.md",
+      "classification": "template-publico",
+      "sha256": "1220d80ebefe06923111511e5727f73853ecf9d835eeda03cab82497528cffb2"
+    },
+    {
+      "path": "01_projeto/visao-do-projeto.md",
+      "classification": "template-publico",
+      "sha256": "03b6bbc74f2bad2658eee434491894cb13c5db42ee5ece62648a11911c2f21d2"
+    },
+    {
+      "path": "02_reunioes/2026-09-21-ata-handoff-fase-1.md",
+      "classification": "template-publico",
+      "sha256": "c9365c2e275a3c49136421b00c5b2628d40c53d73b547fd039e36fb578c7f9c2"
+    },
+    {
+      "path": "03_documentos/manual-boas-praticas-resumo.md",
+      "classification": "template-publico",
+      "sha256": "5fd1a39fa2c1da94982c7b52231d9238aaec2a2dfc89e71b0ea8e1348860040f"
+    },
+    {
+      "path": "04_fase-atual/fase.md",
+      "classification": "fase-atual",
+      "sha256": "71105f0339e67e99d356d65f4ac0f15a7372895a272c932f98506007bec45dd3"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-001.md",
+      "classification": "spec-fase-atual",
+      "sha256": "e58354877c4341330af758f4a07270353b3d4ebc223df96036d5c5c9d6ec4489"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-002.md",
+      "classification": "spec-fase-atual",
+      "sha256": "1057973eae1743b7c1bf485e958280d092d28ad82adaba2704008d5285a8a150"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-003.md",
+      "classification": "spec-fase-atual",
+      "sha256": "93c91008ecc9d81b70d574d5b8207a2ac46123c94f4536da2adc12d4c49438f2"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-004.md",
+      "classification": "spec-fase-atual",
+      "sha256": "fd1b60f8ac54b02cdf6562342418c77b0a529dfdc28b6d07ac929fe719cccc57"
+    },
+    {
+      "path": "06_notas/dividas.md",
+      "classification": "template-publico",
+      "sha256": "34684a1380924532806b697adb771925126346a36c4a2ffb40085e125eb927e5"
+    },
+    {
+      "path": "AGENTS.md",
+      "classification": "template-publico",
+      "sha256": "bc6681e2a3621aa6502142786f5981e227d3bcc7caf05e9478441f5f1b4ec367"
+    },
+    {
+      "path": "CLAUDE.md",
+      "classification": "template-publico",
+      "sha256": "958d05f1c0c3e3b9bc842d329c3942c02bf8b450eb83202b80ad3d70efe741cd"
+    },
+    {
+      "path": "README.md",
+      "classification": "template-publico",
+      "sha256": "891f3978bd24733ff52f459b77d48e8672e04679481db41d95fecbc1bed63cd6"
+    },
+    {
+      "path": "STATUS.md",
+      "classification": "template-publico",
+      "sha256": "d305fb6ab6a619bdaa671d06e6b37fb810ac544de968b6c7fa4d79298c38912d"
+    },
+    {
+      "path": "changelog.md",
+      "classification": "template-publico",
+      "sha256": "e7b12ad8848d87a5b6fe606e847035f19c95d502439b861dc8c9b47f0b483ecd"
+    }
+  ]
+}

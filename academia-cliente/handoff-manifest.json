@@ -34,6 +34,11 @@
       "sha256": "c9365c2e275a3c49136421b00c5b2628d40c53d73b547fd039e36fb578c7f9c2"
     },
     {
+      "path": "03_documentos/02-Escopo-Definitivo.md",
+      "classification": "template-publico",
+      "sha256": "9c0d43955872722279671ce3f2f700a861f4a9c9818cf1c26c6856225137be0e"
+    },
+    {
       "path": "03_documentos/manual-boas-praticas-resumo.md",
       "classification": "template-publico",
       "sha256": "5fd1a39fa2c1da94982c7b52231d9238aaec2a2dfc89e71b0ea8e1348860040f"

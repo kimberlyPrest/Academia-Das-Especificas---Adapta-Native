@@ -10,7 +10,7 @@
 - 12 tasks da Fase 1 em `04_fase-atual/fase.md` (tabela operacional completa).
 - **Execução em andamento pelo cliente (Hikari + Claude Code): T1.1 a T1.11 construídas e aprovadas em teste independente (v0.0.27 no Skip; 15 migrations no banco de desenvolvimento). Falta a T1.12 — sessão de aceite com a direção.**
 - **2026-10-07: respondidos os pedidos técnicos de 02/10 (9 blocos). Publicados em `03_documentos/`: matriz de rastreabilidade (REQ-F1..F5), SPEC-2-001 e SPECs-contrato das Fases 3–5, quadros de tasks das Fases 2–5 (`03_documentos/fases/`) e 00-DMO.md.**
-- Pendências de resposta ao cliente: itens 6.4 (Restaurar/Reverter), 7.1 (skip.js), 7.2 (selo) e 7.3 (hospedagem/retencão) — a confirmar com o Skip.
+- Pendências de resposta ao cliente: itens 6.4 (Restaurar/Reverter), 7.2 (onde desligar o selo) e 7.3 (hospedagem/retenção) — a confirmar com o Skip. Itens 7.1/7.2 já respondidos com verificação do código do skip.js (pixel de visita + selo desligável via showBadge).
 
 ## Gates abertos que bloqueiam fases futuras
 

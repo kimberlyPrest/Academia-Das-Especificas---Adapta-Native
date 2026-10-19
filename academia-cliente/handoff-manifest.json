@@ -5,7 +5,7 @@
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
   },
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-10-19",
   "project": "academia-das-especificas",
   "files": [
     {
@@ -46,32 +46,32 @@
     {
       "path": "04_fase-atual/fase.md",
       "classification": "template-publico",
-      "sha256": "71105f0339e67e99d356d65f4ac0f15a7372895a272c932f98506007bec45dd3"
+      "sha256": "a45b025552b90759d38ad97d8ef0a6dedbf88003c87444515d21f73d5ba80a76"
     },
     {
       "path": "04_fase-atual/specs/SPEC-1-001.md",
       "classification": "template-publico",
-      "sha256": "e58354877c4341330af758f4a07270353b3d4ebc223df96036d5c5c9d6ec4489"
+      "sha256": "176694560071b0d0565795188a2fc93ec4728fa25aa385b4c103743786b2eb90"
     },
     {
       "path": "04_fase-atual/specs/SPEC-1-002.md",
       "classification": "template-publico",
-      "sha256": "1057973eae1743b7c1bf485e958280d092d28ad82adaba2704008d5285a8a150"
+      "sha256": "0228cb329e8ed2228c916954618d4681b2ec6dda72ecf57e8b77de237e4d2baf"
     },
     {
       "path": "04_fase-atual/specs/SPEC-1-003.md",
       "classification": "template-publico",
-      "sha256": "93c91008ecc9d81b70d574d5b8207a2ac46123c94f4536da2adc12d4c49438f2"
+      "sha256": "a660df7dd70b55cef8c4117cd5a1ad47151844edf78d311482eb225e5a26523e"
     },
     {
       "path": "04_fase-atual/specs/SPEC-1-004.md",
       "classification": "template-publico",
-      "sha256": "fd1b60f8ac54b02cdf6562342418c77b0a529dfdc28b6d07ac929fe719cccc57"
+      "sha256": "8633d4443952102644cc12d890fe7d884bd6e47712b1cbe635cb69f5a25f77e0"
     },
     {
       "path": "06_notas/dividas.md",
       "classification": "template-publico",
-      "sha256": "34684a1380924532806b697adb771925126346a36c4a2ffb40085e125eb927e5"
+      "sha256": "c6b804ed7f18773fef6b84cbaa7f734c65cafa6441fff48e4f874d35b94711a8"
     },
     {
       "path": "AGENTS.md",
@@ -91,17 +91,17 @@
     {
       "path": "03_documentos/00-DMO.md",
       "classification": "template-publico",
-      "sha256": "d17664738c66b47c35c8167f3044c7c833aa54ee0348400f7cd7d67c3381b232"
+      "sha256": "ce1a3fd129cb6f02f2cc6f41293236b920799330d2f74ef45aad96595299f54b"
     },
     {
       "path": "03_documentos/matriz-de-rastreabilidade.md",
       "classification": "template-publico",
-      "sha256": "47bbcf4767dc524e6ed801cf28aa6d220e1dee282b376f40d600eab3b400ada2"
+      "sha256": "19969293e4ed8197cddbdb79ca266285c958eaa1065c1be08c6317fbacc7653c"
     },
     {
       "path": "03_documentos/fases/fase_2.md",
       "classification": "template-publico",
-      "sha256": "ee8ca69850e5814e8e2cefa33a9f29f9642a33f24ae855071ba826dacce4e8c2"
+      "sha256": "461fe6ec5555e7e038c1d4b23c4abf5548b2bbc291f8e23c5c95298e484b2547"
     },
     {
       "path": "03_documentos/fases/fase_3.md",
@@ -121,7 +121,7 @@
     {
       "path": "03_documentos/fases/specs/SPEC-2-001.md",
       "classification": "template-publico",
-      "sha256": "2c153e161cde93c163642e7016c06f21b51460545067585c1b7da851a3530472"
+      "sha256": "8a7e503574595391204d0aea05a6cff44b1c192543971fd8ab01d34d5e77d9ae"
     },
     {
       "path": "03_documentos/fases/specs/SPEC-3-001.md",
@@ -141,12 +141,17 @@
     {
       "path": "STATUS.md",
       "classification": "template-publico",
-      "sha256": "0969704170b2e562b79587e066d6903dc375ff5dd68c69cabe9e0a9ce91dd318"
+      "sha256": "23110f06b170c74828884a6c75c1f90e271de551c93f0819ff7a8e115c75b2c5"
     },
     {
       "path": "changelog.md",
       "classification": "template-publico",
-      "sha256": "c6f1ebf0212b61757af522f0dfe23aead5d9e391ae3aa92649342009af7df48f"
+      "sha256": "57eaced8b7a33d7b149335450e2383ffb85288c1f1a7d20e8f4568d937eddfc2"
+    },
+    {
+      "path": "03_documentos/03-Proposta-Revisao-Arco-Fases.md",
+      "classification": "template-publico",
+      "sha256": "733f94127576f65ba4da545cb361bb9f83e19e47309dd25e2d9db7ce326509c7"
     }
   ]
 }

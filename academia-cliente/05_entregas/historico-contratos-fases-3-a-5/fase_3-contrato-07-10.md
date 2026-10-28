@@ -1,3 +1,5 @@
+> Histórico de 07/10/2026, arquivado em 28/10/2026. Não é o quadro vigente: ver `04_fase-atual/` e o `LEIA-ME.md` desta pasta.
+
 # Fase 3 — Tarefas
 
 <!-- fase-format:2 -->

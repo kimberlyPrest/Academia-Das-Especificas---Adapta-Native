@@ -1,5 +1,16 @@
 # Changelog — Academia das Específicas
 
+## 2026-10-28 — Fases 1 e 2 fechadas e fase 3 liberada
+
+- Fase 1 fechada pelo consultor: T1.1 a T1.11 com o resultado de 07/10 (v0.0.27) e as emendas de 10/10; a demonstração e o aceite da direção (T1.12) passam para o teste da SPEC-3-001. Arquivada em `05_entregas/fase-1/` (`fase.md` com os ids do portal, quadro antigo e SPECs 1-001 a 1-004).
+- Fase 2 fechada pelo consultor com T2.1 e T2.2 (sandbox, v0.0.33 e v0.0.36). T2.3, T2.4 e T2.5 passam para a SPEC-3-001. Arquivada em `05_entregas/fase-2/` (`fase.md` com os ids do portal e SPEC-2-001 com a emenda de 28/10).
+- Fase 3 publicada em `04_fase-atual/`: SPECs 3-001 a 3-007, 25 tarefas sem id (os ids chegam pelo portal), critérios CA-3-01 a CA-3-27 e checklist CL-001 a CL-016.
+- Orçamento da fase 3 usa a API pública de orçamento do MatriculaWeb só para consultar e simular; nada é gravado lá (resposta ao pedido de 16/10).
+- Contratos de 07/10 das fases 3 a 5 movidos para `05_entregas/historico-contratos-fases-3-a-5/`.
+- `AGENTS.md`: só o consultor libera fase; "pode continuar" não libera fase; o executor não cria SPEC, tarefa nem id; massa de teste `TESTE`; segredos só no servidor.
+- `06_notas/dividas.md`: registro de próxima ação pela tela e E2E da caixa entram na fase 3; novas linhas para massa de teste no banco da operação e orçamento só simulado.
+- `handoff-manifest.json` regenerado para a fase 3.
+
 ## 2026-10-19 — Sincronização com o sistema do cliente (v0.0.36) e proposta de revisão do arco
 
 - Fase 1: T1.1–T1.11 marcadas como concluídas; registradas as emendas T1.13 (14 etapas, FUP 3 arquivada, 7 motivos — GATE-08 fechado) e T1.14 (quadro com arrastar, pendência clicável); CA-1-13 passa a 14 etapas; checklist reinclui a política LGPD provisória.

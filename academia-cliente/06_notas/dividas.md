@@ -12,3 +12,8 @@ Registro append-only de débitos técnicos e simplificações aceitas. Nunca sil
 | 2026-10-19 | Emenda SPEC-2-001 (12/10) | AG-03 simplificado: fila única por unidade, sem dono (sem round-robin/responsável) | Revisar na Fase 3 se a operação pedir responsável por lead |
 | 2026-10-19 | T1.11 | `next_actions` só gravada por fixture/servidor; registro pela tela aguarda a equipe informar como marca a próxima ação hoje no Kommo | Antes da T3.1 (K2) |
 | 2026-10-19 | Revisão da consultoria | Projeto sem testes de frontend (Vitest/Playwright, DEC-EXEC-02); provas são pgTAP + roteiros bash | Antes do canal produtivo (Fase 2), ao menos E2E do fluxo de inbox |
+| 2026-10-28 | Liberação da fase 3 | **Em pagamento:** registro da próxima ação pela tela entra na SPEC-3-002 (linha de 2026-10-19 sobre `next_actions`) | Aceite da SPEC-3-002 |
+| 2026-10-28 | Liberação da fase 3 | **Em pagamento:** E2E do fluxo da caixa entra na SPEC-3-001 (linha de 2026-10-19 sobre testes de frontend) | Aceite da SPEC-3-001 |
+| 2026-10-28 | Orientação de 20/10 | Testes no mesmo banco da operação, com `is_test` e nome `TESTE`; a auditoria é só de inclusão, então a massa de teste fica registrada | SPEC própria de limpeza antes do primeiro dado real (GATE-03 e GATE-09) |
+| 2026-10-28 | SPEC-3-002 | Orçamento só consulta e simula no MatriculaWeb; não grava orçamento nem lead lá | Decisão do consultor sobre integração de escrita |
+| 2026-10-28 | SPEC-3-004 | Reunião registrada na central, sem integração com a agenda do diretor | GATE-06 |

@@ -1,26 +1,25 @@
 # STATUS — Academia das Específicas
 
-**Fase atual:** 1 — Fundação determinística (construída; aguardando aceite formal) · Fase 2 em execução em sandbox
-**Data:** 2026-10-19
+**Fase atual:** 3 — CRM operacional, da qualificação à matrícula (liberada em 28/10/2026)
+**Data:** 2026-10-28
 
 ## Estado
 
-- **Fase 1 construída:** T1.1–T1.11 ☑ e as emendas T1.13 (14 etapas, FUP 3 arquivada, 7 motivos — decisões da direção em 08/10) e T1.14 (quadro com arrastar, pendência clicável) ☑. GATE-08 fechado.
-- **Falta para fechar a Fase 1:**
-  1. T1.12 / CA-1-24 — ata de aceite com champion/direção (a demonstração de 08/10 gerou as emendas, mas o aceite não foi registrado).
-  2. Política LGPD provisória documentada (checklist do escopo §18; reincluída no `fase.md`).
-  3. Ritual de fechamento: arquivar em `05_entregas/fase-1/`, promover a Fase 2 a `04_fase-atual/`, atualizar handoff-manifest.
-- **Fase 2 (sandbox, v0.0.36):** T2.1 ☑ (webhooks Meta HMAC + formulários, idempotência, dead-letter; funções publicadas e fechadas sem segredos) e T2.2 ☑ (AG-01..03 + revisão de duplicatas; emendas de 12 e 13/10). Restam T2.3 (inbox + janela 24h), T2.4 (SLA + K1 + painel diário) e a nova **T2.5** (envio `message-send` + boas-vindas — não tinha task).
-- **Proposta de revisão do arco** publicada em `03_documentos/03-Proposta-Revisao-Arco-Fases.md` (minuta, não vigente): Fase 2 + núcleo da Fase 3 até a Black Friday; restante da Fase 3, IA e retirada do Kommo depois; baseline do K3 a partir do histórico do Kommo.
-- Pendências de resposta ao cliente: 6.4 (Restaurar/Reverter) e 7.3 (hospedagem/retenção) — a confirmar com o Skip.
+- **Fase 1 fechada** pelo consultor em 28/10: T1.1 a T1.11 aprovadas em teste independente (v0.0.27, 07/10), com as emendas de 10/10 (14 etapas, 7 motivos, quadro com arrastar). O aceite da direção (antiga T1.12) passou para o teste da SPEC-3-001. Arquivo em `05_entregas/fase-1/`.
+- **Fase 2 fechada** pelo consultor em 28/10 com o que estava registrado até 19/10: webhooks com idempotência e dead-letter (v0.0.33) e validação, deduplicação e distribuição (v0.0.36), em sandbox. Caixa de conversas, envio com boas-vindas e SLA com painel do dia (antigas T2.3, T2.4 e T2.5) passaram para a SPEC-3-001; o que já estiver construído fecha rodando as provas na versão atual. Arquivo em `05_entregas/fase-2/`.
+- **Fase 3 liberada:** 7 SPECs, 25 tarefas, critérios CA-3-01 a CA-3-27 e checklist da Academia (CL-001 a CL-016). Tudo com massa de teste `TESTE`; nenhuma gravação no MatriculaWeb ou no Kommo.
+- Os contratos de 07/10 das fases 3 a 5 foram arquivados em `05_entregas/historico-contratos-fases-3-a-5/`. As fases 4 e 5 serão geradas na liberação de cada uma.
+- A minuta `03_documentos/03-Proposta-Revisao-Arco-Fases.md` continua não vigente. A ordem das SPECs da fase 3 já põe primeiro o que ataca a Black Friday e a importação do Kommo por último.
 
 ## Gates
 
 - **Fechado:** GATE-08 (7 motivos, 08/10).
-- **Caminho crítico (Fase 2 produtiva):** GATE-01 (número do SLA), GATE-03 (conta Meta/número/templates — considerar duas empresas), GATE-09 (LGPD — dois controladores), GATE-11 (formulários).
-- GATE-04..07, 12 → Fase 3. GATE-13 → Fase 4. GATE-02 (baseline) → Fase 5.
+- **Não travam a construção da fase 3:** GATE-01 (SLA), GATE-05 (alçadas), GATE-06 (agenda do diretor), GATE-07 (prazos de follow-up), GATE-11 (formulários), GATE-12 (marco de conversão). Até a decisão, valem os padrões das SPECs.
+- **Travam só a operação real:** GATE-03 (conta Meta, número, modelos; API oficial escolhida em 19/10), GATE-09 (LGPD) e GATE-04 (exportação do Kommo, com chave nova).
+- GATE-13 → fase 4. GATE-02 (baseline) → fase 5.
 
 ## Próximo passo
 
-1. Reunião com o Luiz Fernando: aceite da Fase 1 (ata), decisão sobre a proposta de revisão do arco e calendário de gates.
-2. Em paralelo, a execução segue com T2.5 → T2.3 → T2.4 em sandbox.
+1. SPEC-3-001, começando pelo envio pelo servidor com a boas-vindas.
+2. Teste do cliente uma vez por SPEC, no fim dela. O teste da SPEC-3-001 vale também como aceite da fase 1.
+3. Só o consultor libera a fase 4.

@@ -1,18 +1,13 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
-  "phase": 1,
+  "phase": 3,
   "versions": {
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
   },
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-28",
   "project": "academia-das-especificas",
   "files": [
-    {
-      "path": ".claude/settings.json",
-      "classification": "template-publico",
-      "sha256": "914f1e1b8c481c56f6383fe4ae281cf8304b2f3ed4c9260926dcbe045f93b146"
-    },
     {
       "path": "01_projeto/constituicao.md",
       "classification": "template-publico",
@@ -34,9 +29,19 @@
       "sha256": "c9365c2e275a3c49136421b00c5b2628d40c53d73b547fd039e36fb578c7f9c2"
     },
     {
+      "path": "03_documentos/00-DMO.md",
+      "classification": "template-publico",
+      "sha256": "ce1a3fd129cb6f02f2cc6f41293236b920799330d2f74ef45aad96595299f54b"
+    },
+    {
       "path": "03_documentos/02-Escopo-Definitivo.md",
       "classification": "template-publico",
       "sha256": "9c0d43955872722279671ce3f2f700a861f4a9c9818cf1c26c6856225137be0e"
+    },
+    {
+      "path": "03_documentos/03-Proposta-Revisao-Arco-Fases.md",
+      "classification": "template-publico",
+      "sha256": "733f94127576f65ba4da545cb361bb9f83e19e47309dd25e2d9db7ce326509c7"
     },
     {
       "path": "03_documentos/manual-boas-praticas-resumo.md",
@@ -44,114 +49,179 @@
       "sha256": "5fd1a39fa2c1da94982c7b52231d9238aaec2a2dfc89e71b0ea8e1348860040f"
     },
     {
+      "path": "03_documentos/matriz-de-rastreabilidade.md",
+      "classification": "template-publico",
+      "sha256": "4d62e6f2b65f28bd17d6fbb073223464c7525ef6e8393d5d56486e94e2eb2141"
+    },
+    {
+      "path": "04_fase-atual/checklist-do-cliente.md",
+      "classification": "template-publico",
+      "sha256": "089a6b258b50451e8dfcc831e565d25e5088293b24cc18fd9df694596060047a"
+    },
+    {
       "path": "04_fase-atual/fase.md",
+      "classification": "template-publico",
+      "sha256": "8982d7637c011384652439891e1a9d23c9092482b0f018fbaea7a8598de0dee4"
+    },
+    {
+      "path": "04_fase-atual/specs/00-INDICE.md",
+      "classification": "template-publico",
+      "sha256": "e50bb4ae14a8390834c80c701c77ef150057a7e9626661c2e7db4eb2df240006"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-001-atendimento-whatsapp-em-teste.md",
+      "classification": "template-publico",
+      "sha256": "c2ff5da3ad0edd1b078431569bb5cb568b65c0abca53aecd4d1fa287d6cd8335"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-002-qualificacao-orcamento-proxima-acao.md",
+      "classification": "template-publico",
+      "sha256": "b55f8bb48f377879dc8bcfc613b00c728a77cb0f1c2c6c08a800040d0c3d1552"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-003-follow-up-depois-do-orcamento.md",
+      "classification": "template-publico",
+      "sha256": "f3d80ffe2e38f20b0728a098cec84e73fb655500d88da2b4b3b62ad65ca265ed"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-004-reuniao-e-negociacao.md",
+      "classification": "template-publico",
+      "sha256": "9c4366a3756ab0126b408b55ca962ffa299a28e4d03a9b9f8f107f975339853b"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-005-matricula-e-interesse-2027.md",
+      "classification": "template-publico",
+      "sha256": "c56145ed69e6445107152db3987f1511e421019252c2eaa5064dca02b0faaf56"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-006-painel-gerencial.md",
+      "classification": "template-publico",
+      "sha256": "cdeed2cddc9d9ceda43909c19e753fbb1c36c6cdad14fb7b2175a96bf342a5b4"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-3-007-historico-do-kommo.md",
+      "classification": "template-publico",
+      "sha256": "b64aac5cd84eac5e3d51dff805a29e01bb8c2725042f57ba92882bdae2260524"
+    },
+    {
+      "path": "05_entregas/fase-1/LEIA-ME.md",
+      "classification": "template-publico",
+      "sha256": "4853c650861eac593c0c3940b0caea6c9797b0d1a9b1fda9d16b6b03d7a3fda1"
+    },
+    {
+      "path": "05_entregas/fase-1/fase.md",
+      "classification": "template-publico",
+      "sha256": "b01c230d76b5d43f0fd2ba2d48e1097fe85117cca9110d8c12538d08989860a2"
+    },
+    {
+      "path": "05_entregas/fase-1/quadro-da-fase-1.md",
       "classification": "template-publico",
       "sha256": "a45b025552b90759d38ad97d8ef0a6dedbf88003c87444515d21f73d5ba80a76"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-001.md",
+      "path": "05_entregas/fase-1/specs/SPEC-1-001.md",
       "classification": "template-publico",
       "sha256": "176694560071b0d0565795188a2fc93ec4728fa25aa385b4c103743786b2eb90"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-002.md",
+      "path": "05_entregas/fase-1/specs/SPEC-1-002.md",
       "classification": "template-publico",
       "sha256": "0228cb329e8ed2228c916954618d4681b2ec6dda72ecf57e8b77de237e4d2baf"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-003.md",
+      "path": "05_entregas/fase-1/specs/SPEC-1-003.md",
       "classification": "template-publico",
       "sha256": "a660df7dd70b55cef8c4117cd5a1ad47151844edf78d311482eb225e5a26523e"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-004.md",
+      "path": "05_entregas/fase-1/specs/SPEC-1-004.md",
       "classification": "template-publico",
       "sha256": "8633d4443952102644cc12d890fe7d884bd6e47712b1cbe635cb69f5a25f77e0"
     },
     {
+      "path": "05_entregas/fase-2/LEIA-ME.md",
+      "classification": "template-publico",
+      "sha256": "76f473bd79b9533c8da7dc35058c05180738dab62bf218d0bc2c768b6561c8a8"
+    },
+    {
+      "path": "05_entregas/fase-2/fase.md",
+      "classification": "template-publico",
+      "sha256": "428b74023d6c69b402ae0c13eab87ff19d8d59109324e9de6d43abb37ad0f814"
+    },
+    {
+      "path": "05_entregas/fase-2/specs/SPEC-2-001.md",
+      "classification": "template-publico",
+      "sha256": "ae54ef69c5bc7236b8e1bdb4dc70e7fc232cc1e57ad9266da73f256899ad701f"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/LEIA-ME.md",
+      "classification": "template-publico",
+      "sha256": "bb4b173d6b07186d0f648399785356d5110de6105d98a6adf6122e6afc52135b"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/fase_3-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "c5ccf16150fd1fa12928f7fd9827974fe1f510f13c0d966ead5e16e5ee1646fe"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/fase_4-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "1526256ac29ece49a3bf050272d54d8eea36956d235efca623a2ca0225bc1148"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/fase_5-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "136bc1971eef04b8ae13ca4bd66af0949564e54274859b32da14a06db3178c8e"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/specs/SPEC-3-001-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "ec7a47bc73d70ebbcdbca13ac8fbfefd55c887ff4a4e872b5bcc597049915e0a"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/specs/SPEC-4-001-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "d4d3ce1552b11231c6db5cc6be7a42661c6f416b649211b848e119a56ea84def"
+    },
+    {
+      "path": "05_entregas/historico-contratos-fases-3-a-5/specs/SPEC-5-001-contrato-07-10.md",
+      "classification": "template-publico",
+      "sha256": "854ee923c78d3d528f7a8bb2f85709c380025c2b1e1901f8cae3b7ef03dee31f"
+    },
+    {
       "path": "06_notas/dividas.md",
       "classification": "template-publico",
-      "sha256": "c6b804ed7f18773fef6b84cbaa7f734c65cafa6441fff48e4f874d35b94711a8"
+      "sha256": "bd905026df9a2eb77f454539575010ef82c86006aad2a983b0916ba3c6a45193"
     },
     {
       "path": "AGENTS.md",
       "classification": "template-publico",
-      "sha256": "bc6681e2a3621aa6502142786f5981e227d3bcc7caf05e9478441f5f1b4ec367"
+      "sha256": "6174eee31594113b50497b2738b29d0b33b70e5b41ad593ad513b76899974217"
     },
     {
       "path": "CLAUDE.md",
       "classification": "template-publico",
-      "sha256": "958d05f1c0c3e3b9bc842d329c3942c02bf8b450eb83202b80ad3d70efe741cd"
+      "sha256": "c64c6b77fdabf395f251802b99b06dde2923ac2af09dc1efe3a9b6fc9f23c487"
     },
     {
       "path": "README.md",
       "classification": "template-publico",
-      "sha256": "891f3978bd24733ff52f459b77d48e8672e04679481db41d95fecbc1bed63cd6"
-    },
-    {
-      "path": "03_documentos/00-DMO.md",
-      "classification": "template-publico",
-      "sha256": "ce1a3fd129cb6f02f2cc6f41293236b920799330d2f74ef45aad96595299f54b"
-    },
-    {
-      "path": "03_documentos/matriz-de-rastreabilidade.md",
-      "classification": "template-publico",
-      "sha256": "19969293e4ed8197cddbdb79ca266285c958eaa1065c1be08c6317fbacc7653c"
-    },
-    {
-      "path": "03_documentos/fases/fase_2.md",
-      "classification": "template-publico",
-      "sha256": "461fe6ec5555e7e038c1d4b23c4abf5548b2bbc291f8e23c5c95298e484b2547"
-    },
-    {
-      "path": "03_documentos/fases/fase_3.md",
-      "classification": "template-publico",
-      "sha256": "aa8bae5cdf65aa521792fbdc010841b2b31d651969934764cfd52b3b77d57ddc"
-    },
-    {
-      "path": "03_documentos/fases/fase_4.md",
-      "classification": "template-publico",
-      "sha256": "5a7f38f3185a137ec54e063dd3412d9084b311f774035c42917bfdd0133446d1"
-    },
-    {
-      "path": "03_documentos/fases/fase_5.md",
-      "classification": "template-publico",
-      "sha256": "9e14c03d16cdaa1096f297967b4aa434123f6a371ad8b74dd173ac5c7e8c8fbe"
-    },
-    {
-      "path": "03_documentos/fases/specs/SPEC-2-001.md",
-      "classification": "template-publico",
-      "sha256": "8a7e503574595391204d0aea05a6cff44b1c192543971fd8ab01d34d5e77d9ae"
-    },
-    {
-      "path": "03_documentos/fases/specs/SPEC-3-001.md",
-      "classification": "template-publico",
-      "sha256": "0d62823dd3e8ffa76fba20e7b8136197c08c98735f600e46ab4ebc20a7fb0d4f"
-    },
-    {
-      "path": "03_documentos/fases/specs/SPEC-4-001.md",
-      "classification": "template-publico",
-      "sha256": "818ec190daab4799f0a991f56309dc5efbb6fe8ce55ef49e2b590962e1959a01"
-    },
-    {
-      "path": "03_documentos/fases/specs/SPEC-5-001.md",
-      "classification": "template-publico",
-      "sha256": "9d454e7660baad68db9eabde29e1b53e64712a9dc2ae84a65fb25e5fbcc98701"
+      "sha256": "30887ffdcab96e8748f3662e16f994f0ff181a5161e61810231b9baad50fabda"
     },
     {
       "path": "STATUS.md",
       "classification": "template-publico",
-      "sha256": "23110f06b170c74828884a6c75c1f90e271de551c93f0819ff7a8e115c75b2c5"
+      "sha256": "b8bead882a739043fae91cc7fb9a308fe194944c5fed563d915279d436a1019b"
     },
     {
       "path": "changelog.md",
       "classification": "template-publico",
-      "sha256": "57eaced8b7a33d7b149335450e2383ffb85288c1f1a7d20e8f4568d937eddfc2"
+      "sha256": "f1b67e82b87c588d03e7b363aaa8ca7da2fe9f2e5426a7c7e0dc99cb9e7cf638"
     },
     {
-      "path": "03_documentos/03-Proposta-Revisao-Arco-Fases.md",
+      "path": "settings.json",
       "classification": "template-publico",
-      "sha256": "733f94127576f65ba4da545cb361bb9f83e19e47309dd25e2d9db7ce326509c7"
+      "sha256": "914f1e1b8c481c56f6383fe4ae281cf8304b2f3ed4c9260926dcbe045f93b146"
     }
   ]
 }

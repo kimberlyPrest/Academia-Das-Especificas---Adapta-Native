@@ -14,11 +14,11 @@ Luiz Fernando (direção) — responsável pelo projeto do lado da Academia.
 
 ## Consultor
 
-Kim (consultoria técnica Adapta Native).
+Consultoria técnica Adapta Native (Kim; Rodrigo na liberação da fase 3). Só o consultor libera fase (`AGENTS.md`).
 
 ## Limites do champion
 
-- Executar as tarefas da fase atual conforme as SPECs de `04_fase-atual/specs/`.
+- Executar as tarefas da fase atual conforme as SPECs de `04_fase-atual/specs/`, em sequência, com o teste do cliente uma vez por SPEC.
 - Registrar dúvidas e bloqueios em `06_notas/` — não improvisar fora do contrato da SPEC.
 - Não ativar integrações reais (WhatsApp/Meta), não importar dados reais e não operar fora de sandbox sem o gate correspondente aprovado.
 

@@ -1,3 +1,5 @@
+> Histórico de 07/10/2026, arquivado em 28/10/2026. Não é o quadro vigente: ver `04_fase-atual/` e o `LEIA-ME.md` desta pasta.
+
 # SPEC-5-001 — Validação integral, KPIs e decommission do Kommo
 
 **Fase:** 5

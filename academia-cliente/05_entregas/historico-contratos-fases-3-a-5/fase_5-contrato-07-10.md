@@ -1,4 +1,6 @@
-# Fase 4 — Tarefas
+> Histórico de 07/10/2026, arquivado em 28/10/2026. Não é o quadro vigente: ver `04_fase-atual/` e o `LEIA-ME.md` desta pasta.
+
+# Fase 5 — Tarefas
 
 <!-- fase-format:2 -->
 
@@ -29,9 +31,9 @@ Marque `[x]` para concluir e adicione linhas novas à vontade: elas entram no qu
 sincronização e voltam aqui com o `<!-- id:… -->` preenchido. **Não apague o marcador de id** das
 tarefas que já têm um.
 
-- [ ] T4.1 — AG-10 sugestor de resposta com feature flag e métricas @"Academia das Específicas" !17/11/2026  <!-- id:4b98c0b2-fc71-414e-8ec9-0ad641240dc8 -->
-  > SPEC-4-001 · CA-4-01, CA-4-02 · Prova: fluxo assistido em sandbox · Pré: Fase 3 aceita; GATE-13
-- [ ] T4.2 — AG-11 resumidor de handoff + AG-12 classificador de perda @"Academia das Específicas" !19/11/2026  <!-- id:f18e478b-d7d6-497e-87d8-299b2ab837b5 -->
-  > SPEC-4-001 · CA-4-03, CA-4-04 · Prova: fluxos assistidos · Pré: T4.1
-- [ ] T4.3 — Guardião de IA (bloqueio/auditoria) + modelo sem retenção @"Academia das Específicas" !24/11/2026  <!-- id:3219b323-dd0a-405b-9069-19bcd44dfd1b -->
-  > SPEC-4-001 · CA-4-05, CA-4-06 · Prova: execução maliciosa simulada · Pré: T4.2
+- [ ] T5.1 — Congelar baseline e período de medição (GATE-02) @"Academia das Específicas" !26/11/2026  <!-- id:b64d39ed-e047-4468-91d9-d8247113172d -->
+  > SPEC-5-001 · pré-requisito do CA-5-03 · Prova: ata de congelamento · Pré: Fase 4 aceita
+- [ ] T5.2 — Matriz de validação transversal + relatório de KPIs por ciclo @"Academia das Específicas" !01/12/2026  <!-- id:7a90682f-af7b-49c5-9e0a-a4ddb07199d9 -->
+  > SPEC-5-001 · CA-5-01 a CA-5-04 · Prova: conferência programática · Pré: T5.1
+- [ ] T5.3 — Auditoria de amostras + decommission do Kommo + retro @"Academia das Específicas" !04/12/2026  <!-- id:4a4e1249-1c95-4d1d-a971-e24913c36d4f -->
+  > SPEC-5-001 · CA-5-05, CA-5-06 · Prova: ata de decommission · Pré: T5.2

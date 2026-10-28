@@ -1,3 +1,5 @@
+> Histórico de 07/10/2026, arquivado em 28/10/2026. Não é o quadro vigente: ver `04_fase-atual/` e o `LEIA-ME.md` desta pasta.
+
 # SPEC-4-001 — IA assistida supervisionada (AG-10/11/12)
 
 **Fase:** 4

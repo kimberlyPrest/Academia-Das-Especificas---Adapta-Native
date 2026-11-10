@@ -2,6 +2,7 @@
 
 | Item | Informação |
 |---|---|
+| **Emenda vigente** | **Emenda 01 (10/11/2026)** — IA no atendimento pelo WhatsApp: `04-Emenda-IA-no-Atendimento.md`. Onde divergem, vale a emenda |
 | **Versão** | 1.0 (minuta para validação da consultora e do cliente) · 21/09/2026 |
 | **Empresa** | Academia das Específicas Gestão Educacional Ltda. (cursinho pré-vestibular — ENEM, UnB, PAS/UnB, particulares de medicina do DF; unidades Asa Sul e Taguatinga; produtos modulares: 7 específicas, Orientação de Estudos, Cabine VIP, Monitoria) |
 | **Frontend** | Aplicação web responsiva (desktop-first para operação de atendimento, utilizável em mobile) |

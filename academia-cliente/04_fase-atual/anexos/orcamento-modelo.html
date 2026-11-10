@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Orçamento Academia</title>
+<!--
+  Modelo do PDF de orçamento da central (Academia das Específicas).
+  Tudo que está entre {{ }} nos comentários vem do sistema:
+   - valores, turma, unidade e nº do orçamento: MatriculaWeb (POST /api/OrcamentoPublico → idOrcamento + ResultadoOrcamento);
+   - aluno, responsável e objetivo: ficha de qualificação da central;
+   - condição de pagamento, validade e chamada final: textos editáveis no admin (área Assistente → Orçamento).
+  Os valores desta amostra são ILUSTRATIVOS.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul: #2b4a9e;        /* primary do sistema */
+    --azul-escuro: #1f3778;
+    --vinho: #a62b4a;       /* destructive/marca */
+    --turquesa: #5cc4c0;    /* accent */
+    --amarelo: #f4dc7a;
+    --ameixa: #6e2a4f;
+    --roxo: #4b2b5c;
+    --tinta: #1a1a1a;
+    --cinza: #6b6b70;
+    --linha: #e5e3de;
+    --creme: #faf9f6;
+    --creme-2: #f3f1ec;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body {
+    font-family: 'Archivo', system-ui, sans-serif;
+    color: var(--tinta);
+    background: #fff;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    font-size: 9.6pt; line-height: 1.4;
+  }
+  .pagina { position: relative; width: 210mm; height: 297mm; overflow: hidden; display: flex; flex-direction: column; }
+
+  /* faixa de chevrons, o mesmo gesto do logo */
+  .chevrons { display: block; width: 100%; height: 6mm; flex: none; }
+  .chevrons.fino { height: 2.6mm; }
+  .chevrons span { flex: 1; clip-path: polygon(0 0, calc(100% - 3.5mm) 0, 100% 50%, calc(100% - 3.5mm) 100%, 0 100%, 3.5mm 50%); margin-right: -2.2mm; }
+  .chevrons span:first-child { clip-path: polygon(0 0, calc(100% - 3.5mm) 0, 100% 50%, calc(100% - 3.5mm) 100%, 0 100%); }
+  .c1 { background: var(--turquesa); } .c2 { background: var(--amarelo); } .c3 { background: var(--vinho); }
+  .c4 { background: var(--ameixa); } .c5 { background: var(--roxo); } .c6 { background: var(--azul); }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; padding: 8mm 14mm 5mm; }
+  header img { height: 19mm; }
+  .doc { text-align: right; }
+  .doc .rotulo { font-stretch: 75%; font-weight: 800; font-size: 25pt; letter-spacing: .02em; line-height: 1; }
+  .doc .numero { margin-top: 2mm; font-weight: 600; color: var(--azul); font-size: 10.5pt; }
+  .doc .meta { color: var(--cinza); font-size: 8.6pt; margin-top: .8mm; }
+
+  main { flex: 1; padding: 3mm 14mm 0; display: flex; flex-direction: column; gap: 4.4mm; }
+
+  .para { display: grid; grid-template-columns: 1.25fr 1fr; gap: 4mm; }
+  .bloco { background: var(--creme); border: 1px solid var(--linha); border-radius: 3mm; padding: 4mm 4.5mm; }
+  .bloco h3 { font-stretch: 80%; font-weight: 700; font-size: 7.6pt; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); margin-bottom: 2mm; }
+  .nome { font-weight: 700; font-size: 13.5pt; line-height: 1.15; }
+  .sub { color: var(--cinza); margin-top: .8mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.6mm; margin-top: 2.6mm; }
+  .chip { font-size: 8.2pt; font-weight: 600; padding: .9mm 2.6mm; border-radius: 10mm; background: #fff; border: 1px solid var(--linha); }
+  .chip.forte { background: var(--azul); color: #fff; border-color: var(--azul); }
+  .turma .nome { font-size: 12pt; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 1mm 3mm; margin-top: 2mm; font-size: 8.8pt; }
+  dt { color: var(--cinza); } dd { font-weight: 600; }
+
+  .tabela h2, .incluso h2, .proximo h2 { font-stretch: 75%; font-weight: 800; font-size: 13pt; letter-spacing: .01em; margin-bottom: 2.4mm; display: flex; align-items: center; gap: 2.4mm; }
+  h2 .seta { width: 3.2mm; height: 3.2mm; background: var(--vinho); clip-path: polygon(0 0, 55% 0, 100% 50%, 55% 100%, 0 100%, 45% 50%); }
+  table { width: 100%; border-collapse: collapse; font-size: 9.4pt; }
+  thead th { text-align: left; font-size: 7.6pt; letter-spacing: .12em; text-transform: uppercase; color: var(--cinza); font-weight: 700; padding: 0 2mm 1.8mm; border-bottom: 1.5px solid var(--tinta); }
+  th.num, td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tbody td { padding: 1.75mm 2mm; border-bottom: 1px solid var(--linha); }
+  tbody td:first-child { font-weight: 600; }
+  .tag { display: inline-block; font-size: 7.4pt; font-weight: 700; padding: .3mm 1.8mm; border-radius: 1.2mm; margin-left: 1.5mm; vertical-align: 1px; }
+  .tag.desc { background: #f6e3e8; color: var(--vinho); }
+  .tag.inc { background: #e3f4f3; color: #2c7e7a; }
+  .riscado { color: var(--cinza); text-decoration: line-through; font-weight: 400; margin-right: 1.5mm; font-size: 8.4pt; }
+  tr.extra td { color: var(--tinta); font-weight: 400; }
+  tr.extra td:first-child { font-weight: 500; }
+
+  .totais { display: grid; grid-template-columns: 1fr 74mm; gap: 5mm; margin-top: 3.2mm; align-items: stretch; }
+  .economia { border: 1px dashed var(--vinho); border-radius: 3mm; padding: 3.4mm 4.5mm; display: flex; flex-direction: column; justify-content: center; }
+  .economia .grande { font-stretch: 75%; font-weight: 800; color: var(--vinho); font-size: 17pt; line-height: 1.05; }
+  .economia p { color: var(--cinza); font-size: 8.6pt; margin-top: 1mm; }
+  .total { background: var(--azul); color: #fff; border-radius: 3mm; padding: 4mm 5mm; position: relative; overflow: hidden; }
+  .total::after { content: ""; position: absolute; right: -6mm; top: -4mm; width: 26mm; height: 34mm; background: rgba(255,255,255,.08); clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%); }
+  .linha-t { display: flex; justify-content: space-between; font-size: 8.8pt; opacity: .85; }
+  .valor-final { font-stretch: 75%; font-weight: 800; font-size: 26pt; line-height: 1; margin-top: 2mm; font-variant-numeric: tabular-nums; }
+  .parcelas { margin-top: 1.4mm; font-weight: 600; font-size: 10pt; color: var(--amarelo); }
+
+  .condicao { display: flex; gap: 3mm; align-items: flex-start; background: #fff8dc; border-left: 1.4mm solid var(--amarelo); border-radius: 0 2.4mm 2.4mm 0; padding: 3mm 4mm; font-size: 8.9pt; }
+  .condicao strong { display: block; font-size: 9.4pt; margin-bottom: .4mm; }
+
+  .duas { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .incluso ul { list-style: none; display: grid; gap: 1.6mm; }
+  .incluso li { display: flex; gap: 2mm; align-items: flex-start; font-size: 8.9pt; }
+  .incluso li::before { content: ""; flex: none; width: 2.6mm; height: 2.6mm; margin-top: .9mm; background: var(--turquesa); clip-path: polygon(0 0, 55% 0, 100% 50%, 55% 100%, 0 100%, 45% 50%); }
+  .proximo .cta { background: var(--tinta); color: #fff; border-radius: 3mm; padding: 4mm 4.5mm; }
+  .proximo .cta b { font-stretch: 80%; font-size: 12pt; display: block; line-height: 1.15; }
+  .proximo .cta p { opacity: .8; font-size: 8.7pt; margin-top: 1.2mm; }
+  .proximo .doc-lista { margin-top: 2.6mm; font-size: 8.3pt; color: var(--cinza); }
+  .proximo .doc-lista b { color: var(--tinta); }
+
+  footer { margin-top: auto; padding: 2mm 14mm 0; }
+  .rodape { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--linha); padding: 2.6mm 0 3mm; font-size: 7.4pt; gap: 4mm; color: var(--cinza); }
+  .triplo { white-space: nowrap; font-stretch: 75%; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta); font-size: 8.4pt; }
+  .triplo i { font-style: normal; color: var(--vinho); }
+
+  .amostra { display: inline-block; margin-top: 1.6mm; background: #f6e3e8; color: var(--vinho); font-weight: 700; font-size: 6.8pt; letter-spacing: .14em; padding: .6mm 2.2mm; border-radius: 1.2mm; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="pagina">
+  
+  <svg class="chevrons" viewBox="0 0 600 20" preserveAspectRatio="none" aria-hidden="true"><polygon fill="var(--turquesa)" points="0,0 100,0 112,10 100,20 0,20 0,10"/><polygon fill="var(--amarelo)" points="100,0 200,0 212,10 200,20 100,20 112,10"/><polygon fill="var(--vinho)" points="200,0 300,0 312,10 300,20 200,20 212,10"/><polygon fill="var(--ameixa)" points="300,0 400,0 412,10 400,20 300,20 312,10"/><polygon fill="var(--roxo)" points="400,0 500,0 512,10 500,20 400,20 412,10"/><polygon fill="var(--azul)" points="500,0 600,0 612,10 600,20 500,20 512,10"/></svg>
+
+  <header>
+    <img src="logo.png" alt="Academia das Específicas">
+    <div class="doc">
+      <div class="rotulo">ORÇAMENTO</div>
+      <div class="numero">Nº 004812</div>              <!-- {{idOrcamento}} do MatriculaWeb -->
+      <div class="meta">Emitido em 10/11/2026 · Unidade Asa Sul</div>
+      <div class="amostra">Amostra · valores ilustrativos</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="para">
+      <div class="bloco">
+        <h3>Preparado para</h3>
+        <div class="nome">Mariana Costa</div>          <!-- {{alunoNome}} -->
+        <div class="sub">Responsável: Paula Costa (mãe)</div>
+        <div class="chips">
+          <span class="chip forte">ENEM · Medicina UnB</span>
+          <span class="chip">3º ano do ensino médio</span>
+          <span class="chip">Foco: Exatas</span>
+        </div>
+      </div>
+      <div class="bloco turma">
+        <h3>Sua turma</h3>
+        <div class="nome">Preparatório ENEM Anual 2027</div>   <!-- {{turmaNome}} -->
+        <dl>
+          <dt>Turno</dt><dd>Vespertino · 14h10 às 18h50</dd>
+          <dt>Formato</dt><dd>Presencial, com aulas ao vivo e gravadas</dd>
+          <dt>Início</dt><dd>02/02/2027</dd>                   <!-- {{dataInicio}} -->
+        </dl>
+      </div>
+    </section>
+
+    <section class="tabela">
+      <h2><span class="seta"></span>O que você está contratando</h2>
+      <table>
+        <thead><tr><th>Item</th><th class="num">Valor</th><th class="num">Desconto</th><th class="num">Você paga</th></tr></thead>
+        <tbody>
+          <tr><td>Matemática</td><td class="num">R$ 900,00</td><td class="num"><span class="tag desc">−15%</span></td><td class="num">R$ 765,00</td></tr>
+          <tr><td>Física</td><td class="num">R$ 700,00</td><td class="num"><span class="tag desc">−15%</span></td><td class="num">R$ 595,00</td></tr>
+          <tr><td>Química</td><td class="num">R$ 800,00</td><td class="num"><span class="tag desc">−15%</span></td><td class="num">R$ 680,00</td></tr>
+          <tr><td>Biologia</td><td class="num">R$ 750,00</td><td class="num"><span class="tag desc">−15%</span></td><td class="num">R$ 637,50</td></tr>
+          <tr class="extra"><td>Monitoria de Física <span class="tag inc">incluída</span></td><td class="num">—</td><td class="num">—</td><td class="num">R$ 0,00</td></tr>
+          <tr class="extra"><td>Material didático (4 específicas)</td><td class="num">R$ 100,00</td><td class="num">—</td><td class="num">R$ 100,00</td></tr>
+          <tr class="extra"><td>Matrícula</td><td class="num">R$ 150,00</td><td class="num">—</td><td class="num">R$ 150,00</td></tr>
+        </tbody>
+      </table>
+
+      <div class="totais">
+        <div class="economia">
+          <div class="grande">Você economiza R$ 472,50</div>
+          <p>Desconto da faixa de 4 específicas (15%), aplicado pelo MatriculaWeb sobre cada específica.</p>
+        </div>
+        <div class="total">
+          <div class="linha-t"><span>Total sem desconto</span><span>R$ 3.400,00</span></div>
+          <div class="linha-t"><span>Descontos</span><span>− R$ 472,50</span></div>
+          <div class="valor-final">R$ 2.927,50</div>
+          <div class="parcelas">ou em até 7x de R$ 418,21 sem juros</div>   <!-- texto do admin -->
+        </div>
+      </div>
+    </section>
+
+    <div class="condicao">                                              <!-- texto do admin -->
+      <div>
+        <strong>Condição especial Black Week válida até 30/11/2026</strong>
+        A partir de dezembro, o parcelamento passa a ser em até 6x. O valor total não muda.
+      </div>
+    </div>
+
+    <section class="duas">
+      <div class="incluso">
+        <h2><span class="seta"></span>Já está incluso</h2>
+        <ul>
+          <li>Simulados periódicos, independente de quantas específicas você contratar</li>
+          <li>Monitorias presenciais de segunda a sexta, das 14h às 20h</li>
+          <li>Monitoria online 24h, todos os dias, pelo aplicativo</li>
+          <li>Aulas transmitidas ao vivo e gravadas durante todo o contrato</li>
+          <li>Material atualizado, feito pelos próprios professores</li>
+        </ul>
+      </div>
+      <div class="proximo">
+        <h2><span class="seta"></span>Próximo passo</h2>
+        <div class="cta">                                               <!-- texto do admin -->
+          <b>Venha conhecer a unidade antes de decidir</b>
+          <p>Responda a nossa conversa no WhatsApp e escolha o melhor horário para a sua visita.</p>
+        </div>
+        <p class="doc-lista"><b>Matrícula 100% pelo WhatsApp:</b> documento com foto, telefone e e-mail do aluno e do responsável financeiro, profissão do responsável, CEP e endereço completo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <span class="triplo">Metodologia Triplo A · <i>Acolhimento</i> · <i>Aprimoramento</i> · <i>Aprovação</i></span>
+      <span>Valores do MatriculaWeb · 10/11/2026 · nº 004812</span>
+    </div>
+  </footer>
+  <svg class="chevrons fino" viewBox="0 0 600 20" preserveAspectRatio="none" aria-hidden="true"><polygon fill="var(--turquesa)" points="0,0 100,0 112,10 100,20 0,20 0,10"/><polygon fill="var(--amarelo)" points="100,0 200,0 212,10 200,20 100,20 112,10"/><polygon fill="var(--vinho)" points="200,0 300,0 312,10 300,20 200,20 212,10"/><polygon fill="var(--ameixa)" points="300,0 400,0 412,10 400,20 300,20 312,10"/><polygon fill="var(--roxo)" points="400,0 500,0 512,10 500,20 400,20 412,10"/><polygon fill="var(--azul)" points="500,0 600,0 612,10 600,20 500,20 512,10"/></svg>
+</div>
+</body>
+</html>

@@ -1,25 +1,31 @@
 # STATUS — Academia das Específicas
 
-**Fase atual:** 3 — CRM operacional, da qualificação à matrícula (liberada em 28/10/2026)
-**Data:** 2026-10-28
+**Fase atual:** 4 — Atendimento com IA e virada para a operação real (liberada em 10/11/2026)
+**Data:** 2026-11-10
 
 ## Estado
 
-- **Fase 1 fechada** pelo consultor em 28/10: T1.1 a T1.11 aprovadas em teste independente (v0.0.27, 07/10), com as emendas de 10/10 (14 etapas, 7 motivos, quadro com arrastar). O aceite da direção (antiga T1.12) passou para o teste da SPEC-3-001. Arquivo em `05_entregas/fase-1/`.
-- **Fase 2 fechada** pelo consultor em 28/10 com o que estava registrado até 19/10: webhooks com idempotência e dead-letter (v0.0.33) e validação, deduplicação e distribuição (v0.0.36), em sandbox. Caixa de conversas, envio com boas-vindas e SLA com painel do dia (antigas T2.3, T2.4 e T2.5) passaram para a SPEC-3-001; o que já estiver construído fecha rodando as provas na versão atual. Arquivo em `05_entregas/fase-2/`.
-- **Fase 3 liberada:** 7 SPECs, 25 tarefas, critérios CA-3-01 a CA-3-27 e checklist da Academia (CL-001 a CL-016). Tudo com massa de teste `TESTE`; nenhuma gravação no MatriculaWeb ou no Kommo.
-- Os contratos de 07/10 das fases 3 a 5 foram arquivados em `05_entregas/historico-contratos-fases-3-a-5/`. As fases 4 e 5 serão geradas na liberação de cada uma.
-- A minuta `03_documentos/03-Proposta-Revisao-Arco-Fases.md` continua não vigente. A ordem das SPECs da fase 3 já põe primeiro o que ataca a Black Friday e a importação do Kommo por último.
+- **Fase 3 fechada** pela consultora em 10/11: as 7 SPECs (3-001 a 3-007) construídas entre 28/10 e 09/11, na v0.0.77 (consolidada, não publicada), com as provas automáticas verdes e o teste humano dado como feito. Isso fecha também o aceite da fase 1. Arquivo em `05_entregas/fase-3/`.
+- **Emenda 01 ao escopo** (`03_documentos/04-Emenda-IA-no-Atendimento.md`): a IA atende fora do horário e na abertura, com nome por unidade, sem falar preço, e passa para a equipe pela etiqueta de transbordo. Gemini 2.5 Flash pela API paga. Orçamento gravado no MatriculaWeb e enviado em PDF. GATE-09 (política LGPD) dispensado; GATE-13 fechado.
+- **Fase 4 liberada:** 7 SPECs, 27 tarefas, critérios CA-4-01 a CA-4-31 e checklist da Academia (CL-017 a CL-028). Construção com massa `TESTE`; a virada dos números é feita com a consultora.
+- A minuta `03_documentos/03-Proposta-Revisao-Arco-Fases.md` foi substituída pela Emenda 01.
 
 ## Gates
 
-- **Fechado:** GATE-08 (7 motivos, 08/10).
-- **Não travam a construção da fase 3:** GATE-01 (SLA), GATE-05 (alçadas), GATE-06 (agenda do diretor), GATE-07 (prazos de follow-up), GATE-11 (formulários), GATE-12 (marco de conversão). Até a decisão, valem os padrões das SPECs.
-- **Travam só a operação real:** GATE-03 (conta Meta, número, modelos; API oficial escolhida em 19/10), GATE-09 (LGPD) e GATE-04 (exportação do Kommo, com chave nova).
-- GATE-13 → fase 4. GATE-02 (baseline) → fase 5.
+- **Fechados:** GATE-08 (motivos, 08/10), GATE-13 (IA, 10/11). **Dispensado:** GATE-09 (10/11).
+- **Travam só a virada:** GATE-03 (conta Meta, números no app da Academia, modelos) e GATE-04 (exportação do Kommo com chave nova).
+- **Não travam:** GATE-01 (SLA), GATE-05 (alçadas), GATE-06 (agenda), GATE-07 (prazos de follow-up), GATE-11 (formulários), GATE-12 (marco de conversão). Valem os padrões das SPECs.
+- GATE-02 (baseline) → fase 5, medido pelo histórico do Kommo.
+
+## Pendências que vieram da fase 3
+
+- Teste com o número de teste da Meta e com a API real do MatriculaWeb → SPEC-4-001.
+- Importação real do Kommo → SPEC-4-007.
+- E2E da caixa de conversas (dívida de 19/10) → SPEC-4-002.
 
 ## Próximo passo
 
-1. SPEC-3-001, começando pelo envio pelo servidor com a boas-vindas.
-2. Teste do cliente uma vez por SPEC, no fim dela. O teste da SPEC-3-001 vale também como aceite da fase 1.
-3. Só o consultor libera a fase 4.
+1. SPEC-4-001, começando pelos testes com o número de teste da Meta.
+2. Teste do cliente uma vez por SPEC, no fim dela.
+3. Virada com a consultora, pelo roteiro da SPEC-4-007.
+4. Só a consultora libera a fase 5.

@@ -1,4 +1,4 @@
-# Fase 3 — Tarefas
+# Fase 4 — Tarefas
 
 <!-- fase-format:2 -->
 
@@ -29,53 +29,57 @@ Marque `[x]` para concluir e adicione linhas novas à vontade: elas entram no qu
 sincronização e voltam aqui com o `<!-- id:… -->` preenchido. **Não apague o marcador de id** das
 tarefas que já têm um.
 
-- [ ] Enviar mensagens só pelo servidor, com a boas-vindas automática @"Academia das Específicas" !29/10/2026
-  > Atendente responde pela central sem token no navegador; a boas-vindas sai sozinha no primeiro contato e não conta como atendimento. Antiga T2.5. SPEC-3-001 · CA-3-01.
-- [ ] Abrir a caixa de conversas de cada unidade com o cronômetro de 24 horas @"Academia das Específicas" !29/10/2026
-  > Fila de cada unidade por tempo de espera, com o cronômetro da janela; fora dela, só modelo aprovado, com confirmação e custo registrado. Antiga T2.3. SPEC-3-001 · CA-3-02.
-- [ ] Medir a primeira resposta humana e mostrar o painel do dia @"Academia das Específicas" !30/10/2026
-  > SLA de 10 minutos configurável, alerta de quem passou do prazo, K1 e painel do dia por unidade; dados de teste ficam fora. Antiga T2.4. SPEC-3-001 · CA-3-03, CA-3-04, CA-3-05.
-- [ ] Exigir a ficha de qualificação antes do orçamento @"Academia das Específicas" !30/10/2026
-  > O lead só entra em Qualificado com objetivo, etapa do PAS (quando houver), turno e origem; o admin muda a lista no console. SPEC-3-002 · CA-3-06.
-- [ ] Registrar pela tela a próxima ação do lead, com responsável e prazo @"Academia das Específicas" !03/11/2026
-  > Criar, concluir com resultado e cancelar com motivo a próxima ação de cada lead, com tudo no histórico. SPEC-3-002 · CA-3-07.
-- [ ] Montar o orçamento com as turmas e os preços do MatriculaWeb @"Academia das Específicas" !03/11/2026
-  > Escolher unidade, turma e específicas e ver os valores com desconto calculados pelo MatriculaWeb; com a API fora, orçamento manual marcado. SPEC-3-002 · CA-3-08.
-- [ ] Salvar o orçamento enviado e abrir o retorno do lead @"Academia das Específicas" !04/11/2026
-  > O lead vai para Orçamento enviado com o orçamento guardado e uma tarefa de retorno; nada é gravado no MatriculaWeb. SPEC-3-002 · CA-3-09.
-- [ ] Mostrar ao gestor o K2 e os leads sem próxima ação @"Academia das Específicas" !04/11/2026
-  > Percentual de leads qualificados com próxima ação por unidade e a lista de quem está sem, conferidos com a contagem direta. SPEC-3-002 · CA-3-10.
-- [ ] Criar sozinho as tarefas de FUP 1 e FUP 2 nos prazos configurados @"Academia das Específicas" !05/11/2026
-  > Sem resposta, FUP 1 em 20 horas e FUP 2 em 24 horas, com a mudança de etapa; resposta encerra; reunião e negociação pausam; nada é enviado. SPEC-3-003 · CA-3-11.
-- [ ] Mostrar na tarefa de follow-up se cabe mensagem livre ou só modelo @"Academia das Específicas" !05/11/2026
-  > A tarefa mostra a janela aberta com o horário-limite ou os modelos aprovados com o custo; quem pediu para não receber fica bloqueado. SPEC-3-003 · CA-3-12.
-- [ ] Lembrar o terceiro retorno e pedir a decisão sobre o lead @"Academia das Específicas" !06/11/2026
-  > Depois do FUP 2 sem resposta, um lembrete, sem coluna nova, que só fecha com negociação, 2027, matrícula, desqualificação ou nova ação. SPEC-3-003 · CA-3-13.
-- [ ] Agendar a reunião com o diretor e pausar o follow-up @"Academia das Específicas" !06/11/2026
-  > Reunião com data, formato e diretor registrada no lead; o follow-up para e o diretor vê a reunião na agenda dele na central. SPEC-3-004 · CA-3-14.
-- [ ] Registrar o resultado da reunião e seguir o caminho de cada resultado @"Academia das Específicas" !09/11/2026
-  > Fechou, segue avaliando, não compareceu ou desqualificou levam o lead ao passo certo; reunião sem resultado no dia vira pendência. SPEC-3-004 · CA-3-15.
-- [ ] Abrir a fila de negociação com as alçadas de desconto @"Academia das Específicas" !09/11/2026
-  > Pedido de desconto vai para a fila dos negociadores das duas unidades; quem decide só aprova dentro da faixa cadastrada. SPEC-3-004 · CA-3-16.
-- [ ] Devolver a decisão da negociação ao atendente com a próxima ação @"Academia das Específicas" !10/11/2026
-  > A decisão volta ao atendente como tarefa; sem resposta do lead no prazo, ele vai para Sem resposta pós negociação. SPEC-3-004 · CA-3-17.
-- [ ] Conferir o checklist de matrícula antes de marcar Novo aluno @"Academia das Específicas" !10/11/2026
-  > O atendente confere item por item e a central diz o que falta; documento não é guardado, só a marca de conferido. SPEC-3-005 · CA-3-18.
-- [ ] Registrar a matrícula com o valor final e o que foi contratado @"Academia das Específicas" !11/11/2026
-  > Matrícula com turma, específicas e valor final, que conta uma vez por lead; matrícula presencial entra com origem presencial. SPEC-3-005 · CA-3-19.
-- [ ] Guardar o lead de Interesse 2027 com a data de retomada @"Academia das Específicas" !11/11/2026
-  > Ano-alvo e objetivo obrigatórios; a data de retomada sai da regra do console e o follow-up para até lá. SPEC-3-005 · CA-3-20.
-- [ ] Trazer de volta os leads de 2027 na data de retomada @"Academia das Específicas" !12/11/2026
-  > Rotina diária devolve o lead para a fila da unidade com uma tarefa de retomada, sem duplicar. SPEC-3-005 · CA-3-21.
-- [ ] Mostrar o funil da origem à matrícula por unidade e campanha @"Academia das Específicas" !12/11/2026
-  > Leads, qualificados, orçamentos, negociações e matrículas com a conversão de cada passo, por unidade, origem, campanha e período. SPEC-3-006 · CA-3-22.
-- [ ] Abrir os painéis ao marketing e à diretoria sem acesso às conversas @"Academia das Específicas" !13/11/2026
-  > Marketing vê só números, sem conversa nem dado pessoal; gestor vê a unidade; diretoria vê cada unidade e a soma. SPEC-3-006 · CA-3-23.
-- [ ] Deixar o gestor auditar uma amostra de conversas da unidade @"Academia das Específicas" !13/11/2026
-  > O gestor sorteia conversas, marca qualificação completa e pergunta no final, e o painel mostra os percentuais. SPEC-3-006 · CA-3-24.
-- [ ] Ler o arquivo de exportação do Kommo e mapear etapas, motivos e campos @"Academia das Específicas" !16/11/2026
-  > Com arquivo de teste no formato do Kommo, a central mapeia as 14 etapas, os 7 motivos e os campos e lista o que ficou sem mapa. SPEC-3-007 · CA-3-25.
-- [ ] Guardar o histórico importado sem permitir alteração @"Academia das Específicas" !16/11/2026
-  > O histórico entra marcado como do Kommo, não duplica ao reimportar e o banco recusa edição ou exclusão. SPEC-3-007 · CA-3-26.
-- [ ] Gerar o relatório de conferência da importação @"Academia das Específicas" !17/11/2026
-  > Totais por etapa, unidade e ano, lacunas e possíveis duplicatas, batendo com o arquivo; dado real só depois da LGPD aprovada. SPEC-3-007 · CA-3-27.
+- [ ] Testar texto e modelo com o número de teste da Meta @"Academia das Específicas" !11/11/2026
+  > Envio, entrega e leitura voltando pelo webhook com o número de teste do app da Academia. Pendência da fase 3. SPEC-4-001 · CA-4-01.
+- [ ] Receber e abrir áudio, imagem e documento na conversa @"Academia das Específicas" !11/11/2026
+  > A mídia recebida é baixada para o armazenamento privado e abre na conversa; outra unidade não vê. SPEC-4-001 · CA-4-02.
+- [ ] Enviar imagem e PDF e marcar a conversa como lida @"Academia das Específicas" !12/11/2026
+  > Arquivo só dentro da janela de 24 horas; ao responder, o lead vê a mensagem como lida. SPEC-4-001 · CA-4-03.
+- [ ] Testar o orçamento com a API real do MatriculaWeb @"Academia das Específicas" !12/11/2026
+  > Unidades, turmas e simulação do MatriculaWeb de verdade, conferidas com a página pública de orçamento. Pendência da fase 3. SPEC-4-001 · CA-4-04.
+- [ ] Dar dono à conversa com Assumir, Devolver e Pausar @"Academia das Específicas" !13/11/2026
+  > A conversa fica com a IA, com uma pessoa (com nome) ou pausada; duas atendentes não assumem juntas. SPEC-4-002 · CA-4-05.
+- [ ] Ligar e desligar a IA na conversa, na unidade e em tudo @"Academia das Específicas" !13/11/2026
+  > Atendente na conversa, gestor na unidade, admin em tudo; desligada, nenhuma resposta automática sai. SPEC-4-002 · CA-4-06.
+- [ ] Mostrar o transbordo com etiqueta, motivo e fila por janela e temperatura @"Academia das Específicas" !14/11/2026
+  > Filtro Transbordo ordenado por janela perto de fechar, temperatura e espera, com o resumo da IA. SPEC-4-002 · CA-4-07.
+- [ ] Avisar mensagem nova, criar respostas prontas e cobrir a caixa com E2E @"Academia das Específicas" !14/11/2026
+  > Som e notificação para a atendente; respostas prontas da unidade; teste E2E da caixa (dívida de 19/10). SPEC-4-002 · CA-4-08, CA-4-09.
+- [ ] Criar a área Assistente com rascunho, versões e permissões @"Academia das Específicas" !15/11/2026
+  > Só o admin edita e publica; cada publicação vira versão e dá para voltar. SPEC-4-003 · CA-4-10, CA-4-11.
+- [ ] Editar identidade, horários e o jeito de atender em blocos @"Academia das Específicas" !15/11/2026
+  > Nome da atendente por unidade, expediente, instruções em blocos e regras fixas travadas. SPEC-4-003 · CA-4-12.
+- [ ] Montar o FAQ com anexos, os exemplos e os textos do orçamento @"Academia das Específicas" !16/11/2026
+  > Carga inicial tirada do Manual; exemplos sem telefone nem e-mail; textos que acompanham o PDF. SPEC-4-003 · CA-4-12, CA-4-13.
+- [ ] Decidir quando a IA pode responder e agrupar as mensagens do lead @"Academia das Específicas" !17/11/2026
+  > Fora do horário e na abertura, nunca depois de uma pessoa; uma resposta para mensagens seguidas. SPEC-4-004 · CA-4-14, CA-4-15.
+- [ ] Responder com o Gemini, preencher a ficha e enviar anexos do FAQ @"Academia das Específicas" !17/11/2026
+  > Gemini 2.5 Flash pela API paga, chave só no servidor; ficha completa leva a Qualificado. SPEC-4-004 · CA-4-15, CA-4-16, CA-4-19.
+- [ ] Barrar no Guardião o que a IA não pode dizer @"Academia das Específicas" !18/11/2026
+  > Preço, percentual, desconto, parcela, data, outra unidade e textos longos não saem. SPEC-4-004 · CA-4-17.
+- [ ] Transferir para a equipe com motivo e resumo, e avisar o horário @"Academia das Específicas" !18/11/2026
+  > Pedido de pessoa, preço, fechar, objeção, imagem, "é robô?" e falta de avanço viram transbordo. SPEC-4-004 · CA-4-18.
+- [ ] Desligar a IA sozinha em caso de erro e passar na bateria de avaliação @"Academia das Específicas" !19/11/2026
+  > Desligamento automático por falhas; 20 conversas do Manual sem nenhum preço e com o transbordo certo. SPEC-4-004 · CA-4-19.
+- [ ] Simular uma conversa antes de publicar @"Academia das Específicas" !19/11/2026
+  > O admin testa o rascunho ou a versão publicada sem gravar lead nem enviar nada. SPEC-4-003 · CA-4-13.
+- [ ] Guardar vários números por lead, com o papel de cada um @"Academia das Específicas" !20/11/2026
+  > Aluno, mãe, pai e responsável financeiro no mesmo lead; mensagem de qualquer um cai na mesma conversa. SPEC-4-005 · CA-4-20.
+- [ ] Ligar só quando for a mesma compra, e separar indicação e família @"Academia das Específicas" !20/11/2026
+  > Mesmo aluno, compra aberta e mesma unidade; aluno diferente vira indicação. SPEC-4-005 · CA-4-21, CA-4-22.
+- [ ] Dar à IA e à atendente o jeito de ligar e desfazer, com a contagem única @"Academia das Específicas" !21/11/2026
+  > A IA pergunta o número de quem falou antes; a atendente liga ou desfaz; K3 conta uma vez. SPEC-4-005 · CA-4-22.
+- [ ] Gravar o orçamento no MatriculaWeb e guardar o número @"Academia das Específicas" !21/11/2026
+  > Interesse e orçamento gravados pela API pública, sem gravar duas vezes; erros com saída manual. SPEC-4-006 · CA-4-23, CA-4-26.
+- [ ] Gerar o PDF do orçamento no modelo da Academia @"Academia das Específicas" !22/11/2026
+  > Uma página A4, logo e cores, valores da gravação e textos do admin. SPEC-4-006 · CA-4-24.
+- [ ] Enviar o PDF com a mensagem, a validade e a pergunta @"Academia das Específicas" !22/11/2026
+  > Mensagem que termina em pergunta; lead em Orçamento enviado com o FUP 1. SPEC-4-006 · CA-4-25.
+- [ ] Medir o K1a e o K1b no painel @"Academia das Específicas" !23/11/2026
+  > Primeira resposta em até 1 minuto e resposta humana ao transbordo dentro do SLA, conferidas com a consulta. SPEC-4-007 · CA-4-27.
+- [ ] Mostrar os números de cada atendente e da IA @"Academia das Específicas" !23/11/2026
+  > Abas Equipe e Assistente no painel gerencial, com custo por conversa. SPEC-4-007 · CA-4-28.
+- [ ] Limpar a massa de teste e ensaiar a virada com volume @"Academia das Específicas" !24/11/2026
+  > 300 leads de mentira em 1 hora sem perder nada; plano de volta executado. SPEC-4-007 · CA-4-29, CA-4-30.
+- [ ] Importar o histórico real do Kommo e virar os números para a central @"Academia das Específicas" !25/11/2026
+  > Com a consultora: importação, SalesBot desligado, número no app da Academia, IA fora do horário no primeiro dia. Depende do GATE-03 e do GATE-04. SPEC-4-007 · CA-4-31.

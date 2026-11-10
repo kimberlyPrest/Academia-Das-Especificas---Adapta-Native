@@ -1,11 +1,11 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
-  "phase": 3,
+  "phase": 4,
   "versions": {
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
   },
-  "generatedAt": "2026-10-28",
+  "generatedAt": "2026-11-10",
   "project": "academia-das-especificas",
   "files": [
     {
@@ -36,12 +36,17 @@
     {
       "path": "03_documentos/02-Escopo-Definitivo.md",
       "classification": "template-publico",
-      "sha256": "9c0d43955872722279671ce3f2f700a861f4a9c9818cf1c26c6856225137be0e"
+      "sha256": "ba7d80914529654877bfd1bc07ee5b2fb09dc89294559ab8e8e09bf097604047"
     },
     {
       "path": "03_documentos/03-Proposta-Revisao-Arco-Fases.md",
       "classification": "template-publico",
-      "sha256": "733f94127576f65ba4da545cb361bb9f83e19e47309dd25e2d9db7ce326509c7"
+      "sha256": "886eaa82013489e0ee48f6b98dd8e37373c64ca280e503a922c46a420a8fabb6"
+    },
+    {
+      "path": "03_documentos/04-Emenda-IA-no-Atendimento.md",
+      "classification": "template-publico",
+      "sha256": "103fe3e066101626ec08fcd4252635bbf980b9ebe95a2d0f6cc912b1f19903b7"
     },
     {
       "path": "03_documentos/manual-boas-praticas-resumo.md",
@@ -51,57 +56,77 @@
     {
       "path": "03_documentos/matriz-de-rastreabilidade.md",
       "classification": "template-publico",
-      "sha256": "4d62e6f2b65f28bd17d6fbb073223464c7525ef6e8393d5d56486e94e2eb2141"
+      "sha256": "5af79a43ce0b83042d8bba50b46ea39eaed7640bf3a5eda6bb3a487509927178"
+    },
+    {
+      "path": "04_fase-atual/anexos/carga-inicial-assistente.md",
+      "classification": "template-publico",
+      "sha256": "a300f8e53aec82ad8654fd7e4c87b3a394ce4b3d12f599a950962e9e8370dd51"
+    },
+    {
+      "path": "04_fase-atual/anexos/logo.png",
+      "classification": "template-publico",
+      "sha256": "a4a559efa0a2c738dd9c12b0f400aba5a471002b8373f6b14ed9c67d38ad4e42"
+    },
+    {
+      "path": "04_fase-atual/anexos/orcamento-modelo.html",
+      "classification": "template-publico",
+      "sha256": "0fb7ed6af6bc349e2288a8ca2f9b85d46829d8abf2289969ae2e94a49d9067b0"
+    },
+    {
+      "path": "04_fase-atual/anexos/orcamento-modelo.pdf",
+      "classification": "template-publico",
+      "sha256": "8d19c7b17561ccd68eeb0b969cd469aba79429f830f3a663a8997faf42606251"
     },
     {
       "path": "04_fase-atual/checklist-do-cliente.md",
       "classification": "template-publico",
-      "sha256": "089a6b258b50451e8dfcc831e565d25e5088293b24cc18fd9df694596060047a"
+      "sha256": "832ac957c530df78f6275b794ff98fe96f1d8f5c21b85bcff9c7a9bda708d24a"
     },
     {
       "path": "04_fase-atual/fase.md",
       "classification": "template-publico",
-      "sha256": "8982d7637c011384652439891e1a9d23c9092482b0f018fbaea7a8598de0dee4"
+      "sha256": "a12b2f7e3751625438de674bd4e4a1e36388105ebba54e4469a959e2a00d195c"
     },
     {
       "path": "04_fase-atual/specs/00-INDICE.md",
       "classification": "template-publico",
-      "sha256": "e50bb4ae14a8390834c80c701c77ef150057a7e9626661c2e7db4eb2df240006"
+      "sha256": "67b2270bc3be25a0151197d43614c2c8c674e14e74d2f0dcac290e868c112c48"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-001-atendimento-whatsapp-em-teste.md",
+      "path": "04_fase-atual/specs/spec-4-001-meta-real-midia-e-matriculaweb.md",
       "classification": "template-publico",
-      "sha256": "c2ff5da3ad0edd1b078431569bb5cb568b65c0abca53aecd4d1fa287d6cd8335"
+      "sha256": "26f63c9bd590a76e67054579a1a1ac8b373d2291fa88a2cb9636e2f1f8bb4f7b"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-002-qualificacao-orcamento-proxima-acao.md",
+      "path": "04_fase-atual/specs/spec-4-002-assumir-transbordo-e-fila.md",
       "classification": "template-publico",
-      "sha256": "b55f8bb48f377879dc8bcfc613b00c728a77cb0f1c2c6c08a800040d0c3d1552"
+      "sha256": "091b70325c999736d4c21bf0bdc4086b72710259db562630fdff6e3bfd562900"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-003-follow-up-depois-do-orcamento.md",
+      "path": "04_fase-atual/specs/spec-4-003-area-assistente-no-admin.md",
       "classification": "template-publico",
-      "sha256": "f3d80ffe2e38f20b0728a098cec84e73fb655500d88da2b4b3b62ad65ca265ed"
+      "sha256": "2e999b2f9bd44f111e10c90c6b101dea606631987ba63f55cff067e0df136152"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-004-reuniao-e-negociacao.md",
+      "path": "04_fase-atual/specs/spec-4-004-atendente-virtual.md",
       "classification": "template-publico",
-      "sha256": "9c4366a3756ab0126b408b55ca962ffa299a28e4d03a9b9f8f107f975339853b"
+      "sha256": "28b1a91e8a4f3293a6a2e5ad8c0d8238605ae5029b8e5436247c25e08b2a2454"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-005-matricula-e-interesse-2027.md",
+      "path": "04_fase-atual/specs/spec-4-005-contatos-da-mesma-compra.md",
       "classification": "template-publico",
-      "sha256": "c56145ed69e6445107152db3987f1511e421019252c2eaa5064dca02b0faaf56"
+      "sha256": "52ccf7720d02dd869936e5d84dd821f783290e1fecf43f5fd731c6cc085c8dd8"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-006-painel-gerencial.md",
+      "path": "04_fase-atual/specs/spec-4-006-orcamento-matriculaweb-e-pdf.md",
       "classification": "template-publico",
-      "sha256": "cdeed2cddc9d9ceda43909c19e753fbb1c36c6cdad14fb7b2175a96bf342a5b4"
+      "sha256": "8797982dd7a6119ff1b23d50fa91c294b6f817b900b53f47c9fb700c88ad747a"
     },
     {
-      "path": "04_fase-atual/specs/spec-3-007-historico-do-kommo.md",
+      "path": "04_fase-atual/specs/spec-4-007-metricas-e-virada.md",
       "classification": "template-publico",
-      "sha256": "b64aac5cd84eac5e3d51dff805a29e01bb8c2725042f57ba92882bdae2260524"
+      "sha256": "544e6775d97cd922ec19d7e01c0611b75c5d3cff266f01d8b4d9eae4b964f955"
     },
     {
       "path": "05_entregas/fase-1/LEIA-ME.md",
@@ -154,6 +179,61 @@
       "sha256": "ae54ef69c5bc7236b8e1bdb4dc70e7fc232cc1e57ad9266da73f256899ad701f"
     },
     {
+      "path": "05_entregas/fase-3/LEIA-ME.md",
+      "classification": "template-publico",
+      "sha256": "486571a19053c4f262f0828914a39677867c156a9f575a82c58d28667ffd3a18"
+    },
+    {
+      "path": "05_entregas/fase-3/checklist-do-cliente.md",
+      "classification": "template-publico",
+      "sha256": "089a6b258b50451e8dfcc831e565d25e5088293b24cc18fd9df694596060047a"
+    },
+    {
+      "path": "05_entregas/fase-3/fase.md",
+      "classification": "template-publico",
+      "sha256": "38b4e6845dbca86df31ae8ea5091ad4292f10faf57d6fb1c69ce977f5956f6d9"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/00-INDICE.md",
+      "classification": "template-publico",
+      "sha256": "e50bb4ae14a8390834c80c701c77ef150057a7e9626661c2e7db4eb2df240006"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-001-atendimento-whatsapp-em-teste.md",
+      "classification": "template-publico",
+      "sha256": "c2ff5da3ad0edd1b078431569bb5cb568b65c0abca53aecd4d1fa287d6cd8335"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-002-qualificacao-orcamento-proxima-acao.md",
+      "classification": "template-publico",
+      "sha256": "b55f8bb48f377879dc8bcfc613b00c728a77cb0f1c2c6c08a800040d0c3d1552"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-003-follow-up-depois-do-orcamento.md",
+      "classification": "template-publico",
+      "sha256": "f3d80ffe2e38f20b0728a098cec84e73fb655500d88da2b4b3b62ad65ca265ed"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-004-reuniao-e-negociacao.md",
+      "classification": "template-publico",
+      "sha256": "9c4366a3756ab0126b408b55ca962ffa299a28e4d03a9b9f8f107f975339853b"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-005-matricula-e-interesse-2027.md",
+      "classification": "template-publico",
+      "sha256": "c56145ed69e6445107152db3987f1511e421019252c2eaa5064dca02b0faaf56"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-006-painel-gerencial.md",
+      "classification": "template-publico",
+      "sha256": "cdeed2cddc9d9ceda43909c19e753fbb1c36c6cdad14fb7b2175a96bf342a5b4"
+    },
+    {
+      "path": "05_entregas/fase-3/specs/spec-3-007-historico-do-kommo.md",
+      "classification": "template-publico",
+      "sha256": "b64aac5cd84eac5e3d51dff805a29e01bb8c2725042f57ba92882bdae2260524"
+    },
+    {
       "path": "05_entregas/historico-contratos-fases-3-a-5/LEIA-ME.md",
       "classification": "template-publico",
       "sha256": "bb4b173d6b07186d0f648399785356d5110de6105d98a6adf6122e6afc52135b"
@@ -191,32 +271,32 @@
     {
       "path": "06_notas/dividas.md",
       "classification": "template-publico",
-      "sha256": "bd905026df9a2eb77f454539575010ef82c86006aad2a983b0916ba3c6a45193"
+      "sha256": "8fca14a538cdb875c0969a2481c09eeafaaadb03a0022797dbafd4d94c982b79"
     },
     {
       "path": "AGENTS.md",
       "classification": "template-publico",
-      "sha256": "6174eee31594113b50497b2738b29d0b33b70e5b41ad593ad513b76899974217"
+      "sha256": "78dddbf48e856c5d6bb91f18fff16f2d1e168585b902a08cfee1ce205ef040a0"
     },
     {
       "path": "CLAUDE.md",
       "classification": "template-publico",
-      "sha256": "c64c6b77fdabf395f251802b99b06dde2923ac2af09dc1efe3a9b6fc9f23c487"
+      "sha256": "4c60f6a0f40dcd3492f113c7b4baa048222d82bc394c4cf6797fb40d486b971a"
     },
     {
       "path": "README.md",
       "classification": "template-publico",
-      "sha256": "30887ffdcab96e8748f3662e16f994f0ff181a5161e61810231b9baad50fabda"
+      "sha256": "90422980339a7caac9b437d52940f1def686264c5ecb64531d3f9d7743909de0"
     },
     {
       "path": "STATUS.md",
       "classification": "template-publico",
-      "sha256": "b8bead882a739043fae91cc7fb9a308fe194944c5fed563d915279d436a1019b"
+      "sha256": "2fd53a32280e65686331822d42aa9c63b1748de6017381f8b3faf638ae2116cb"
     },
     {
       "path": "changelog.md",
       "classification": "template-publico",
-      "sha256": "f1b67e82b87c588d03e7b363aaa8ca7da2fe9f2e5426a7c7e0dc99cb9e7cf638"
+      "sha256": "267a936c7b841f8cbed378e4a12d8a4eaabf2a27cf88ea43561c405bd4514fe2"
     },
     {
       "path": "settings.json",

@@ -6,7 +6,7 @@ Construir a **Central de Atendimento e Conversão Comercial** da Academia das Es
 
 ## Contexto
 
-Cursinho pré-vestibular (ENEM, UnB, PAS/UnB, particulares de medicina do DF) com unidades Asa Sul e Taguatinga. O gargalo não é geração de demanda (60–65% das matrículas vêm de indicação), e sim a conversão: leads sem resposta rápida, sem próxima ação e com cadência manual. O funil atual roda no Kommo; a migração acontece por export na Fase 3, com operação paralela até a Fase 5.
+Cursinho pré-vestibular (ENEM, UnB, PAS/UnB, particulares de medicina do DF) com unidades Asa Sul e Taguatinga. O gargalo não é geração de demanda (60–65% das matrículas vêm de indicação), e sim a conversão: leads sem resposta rápida, sem próxima ação e com cadência manual. O funil atual roda no Kommo; a importação real do histórico e a virada dos números para a central acontecem na Fase 4 (SPEC-4-007), e o Kommo sai na Fase 5.
 
 ## Champion
 
@@ -14,7 +14,7 @@ Luiz Fernando (direção) — responsável pelo projeto do lado da Academia.
 
 ## Consultor
 
-Consultoria técnica Adapta Native (Kim; Rodrigo na liberação da fase 3). Só o consultor libera fase (`AGENTS.md`).
+Consultoria técnica Adapta Native (Kim; Rodrigo na liberação da fase 3; Kim na liberação da fase 4). Só o consultor libera fase (`AGENTS.md`).
 
 ## Limites do champion
 
@@ -24,7 +24,7 @@ Consultoria técnica Adapta Native (Kim; Rodrigo na liberação da fase 3). Só 
 
 ## Linha vermelha
 
-Nenhum dado real de aluno/responsável entra no sistema antes da política de LGPD aprovada (GATE-09). Nenhuma mensagem real é enviada antes do gate do canal (GATE-03). Aprovar escopo/SPEC autoriza execução da fase; **não** autoriza integrações, envios ou migração.
+Nenhum dado real de aluno/responsável e nenhuma mensagem real antes da virada feita com a consultora (SPEC-4-007), que depende do gate do canal (GATE-03) e da exportação do Kommo (GATE-04). A política LGPD formal (GATE-09) foi dispensada pela Emenda 01; as proteções técnicas continuam obrigatórias. A IA nunca fala preço, não dá desconto e não fecha matrícula. Aprovar escopo/SPEC autoriza execução da fase; **não** autoriza integrações, envios ou migração.
 
 ## Formato da dívida
 

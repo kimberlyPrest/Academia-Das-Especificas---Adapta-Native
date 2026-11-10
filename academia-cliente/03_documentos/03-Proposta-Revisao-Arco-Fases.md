@@ -2,7 +2,7 @@
 
 | Item | Informação |
 |---|---|
-| **Status** | Minuta para decisão com o champion (Luiz Fernando) e a direção — **não altera o escopo até aprovada** |
+| **Status** | **Substituída** pela Emenda 01 (10/11/2026, `04-Emenda-IA-no-Atendimento.md`). Mantida como histórico |
 | **Data** | 19/10/2026 |
 | **Autora** | Kim (consultoria) |
 | **Afeta** | §18 (fases), §20 (gates), quadros `03_documentos/fases/fase_3.md` a `fase_5.md` |

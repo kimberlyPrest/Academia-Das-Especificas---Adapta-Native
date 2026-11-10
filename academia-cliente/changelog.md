@@ -1,5 +1,15 @@
 # Changelog — Academia das Específicas
 
+## 2026-11-10 — Fase 3 fechada, Emenda 01 e fase 4 liberada
+
+- Fase 3 fechada pela consultora: SPECs 3-001 a 3-007 construídas entre 28/10 e 09/11 (v0.0.77), provas automáticas verdes, teste humano dado como feito; vale também como aceite da fase 1. Arquivada em `05_entregas/fase-3/` (`fase.md` com as 25 tarefas `[x]` e o resultado, SPECs, índice e checklist CL-001 a CL-016).
+- Pendências da fase 3 levadas para a fase 4: teste com o número de teste da Meta e com a API real do MatriculaWeb (SPEC-4-001), importação real do Kommo (SPEC-4-007), E2E da caixa (SPEC-4-002).
+- Publicada a **Emenda 01** ao escopo (`03_documentos/04-Emenda-IA-no-Atendimento.md`): IA atende fora do horário e na abertura (DEC-04), persona com nome (DEC-13), transbordo como etiqueta com fila (DEC-14), tudo da IA editável no admin (DEC-15), Gemini 2.5 Flash pela API paga (DEC-16), ficha só na central (DEC-17), orçamento gravado no MatriculaWeb e enviado em PDF (DEC-18), contatos da mesma compra (DEC-19); novo AG-14; K1a e K1b; GATE-09 dispensado; GATE-13 fechado. Substitui a minuta de revisão do arco (19/10).
+- Fase 4 publicada em `04_fase-atual/`: SPECs 4-001 a 4-007, 27 tarefas sem id (os ids chegam pelo portal), critérios CA-4-01 a CA-4-31, checklist CL-017 a CL-028 e anexos (modelo do PDF de orçamento e carga inicial da área Assistente).
+- `AGENTS.md` e `CLAUDE.md`: teste do cliente por SPEC da fase 4; dado real liberado na virada com a consultora (GATE-09 dispensado).
+- `06_notas/dividas.md`: dívidas da fase 3 atualizadas e novas linhas da fase 4.
+- Matriz de rastreabilidade atualizada e `handoff-manifest.json` regenerado para a fase 4.
+
 ## 2026-10-28 — Fases 1 e 2 fechadas e fase 3 liberada
 
 - Fase 1 fechada pelo consultor: T1.1 a T1.11 com o resultado de 07/10 (v0.0.27) e as emendas de 10/10; a demonstração e o aceite da direção (T1.12) passam para o teste da SPEC-3-001. Arquivada em `05_entregas/fase-1/` (`fase.md` com os ids do portal, quadro antigo e SPECs 1-001 a 1-004).

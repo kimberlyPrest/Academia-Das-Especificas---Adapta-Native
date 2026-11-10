@@ -8,22 +8,22 @@ Agente de execução do projeto **Central de Atendimento e Conversão Comercial*
 2. Execute somente tarefas de `04_fase-atual/fase.md`, pela SPEC de origem em `04_fase-atual/specs/`.
 3. Construa as tasks de cada SPEC em sequência, uma em construção por vez, com as provas de cada uma, sem pedir autorização nem teste entre elas. Chame o teste do cliente da SPEC (`## Teste humano do cliente`) quando todas as tasks dela estiverem no ar.
 4. Critérios de aceite e provas (TDD) vivem na SPEC; a task não cria contrato paralelo.
-5. Toda ação externa real (lead real, envio real pela Meta, leitura ou escrita no Kommo, gravação no MatriculaWeb, importação de dado real) exige o gate aprovado e a liberação do consultor.
+5. Toda ação externa real (lead real, envio real pela Meta com o número de produção, leitura do Kommo real, importação de dado real) acontece na virada da SPEC-4-007, com a consultora. Exceções da fase 4: o número de teste da Meta (SPEC-4-001), a API real do MatriculaWeb para consultar, simular e gravar orçamento `TESTE` (SPECs 4-001 e 4-006) e o Gemini pela API paga (SPEC-4-004). Nada é escrito no Kommo.
 6. Débitos e simplificações vão para `06_notas/dividas.md`, nunca silenciosos.
 
-## Teste do cliente por SPEC — fase 3
+## Teste do cliente por SPEC — fase 4
 
 Um teste por SPEC, quando todas as tasks dela estiverem no ar, pelo roteiro de `## Teste humano do cliente`. Task sem nada para o cliente ver fecha pela prova automática. Enquanto o teste de uma SPEC não acontece, a construção segue pela SPEC seguinte.
 
 | SPEC | Quem testa | Observação |
 |---|---|---|
-| SPEC-3-001 | Luiz, com o Hikari | Vale também como aceite da fase 1 |
-| SPEC-3-002 | Luiz, com um atendente de cada unidade | — |
-| SPEC-3-003 | Luiz, com um atendente | Relógio de teste adiantado |
-| SPEC-3-004 | Luiz como diretor e negociador de teste | Faixas de alçada `TESTE` |
-| SPEC-3-005 | Luiz, com um atendente | — |
-| SPEC-3-006 | Luiz e quem cuida do marketing | — |
-| SPEC-3-007 | Luiz, com quem administra o Kommo | Só arquivo de teste |
+| SPEC-4-001 | Luiz, com o Hikari | Número de teste da Meta e MatriculaWeb real |
+| SPEC-4-002 | Luiz, com um atendente de cada unidade | — |
+| SPEC-4-003 | Luiz | — |
+| SPEC-4-004 | Luiz, com o Hikari e atendentes | Só depois da bateria de avaliação verde |
+| SPEC-4-005 | Luiz, com um atendente | — |
+| SPEC-4-006 | Luiz, com um atendente | Um orçamento `TESTE` real no MatriculaWeb |
+| SPEC-4-007 | Luiz, gestores e atendentes | Ensaio e virada, com a consultora |
 
 ## Arquivo de tarefas lido pelo portal
 
@@ -48,6 +48,6 @@ Vale para todas as fases.
 ## Dados e segredos
 
 - Testes rodam no mesmo banco da operação: todo registro de teste leva `is_test = true` e nome começando com `TESTE`.
-- Nenhum dado real de aluno ou responsável antes da política de LGPD aprovada.
+- Nenhum dado real de aluno ou responsável antes da virada (SPEC-4-007). A política LGPD formal foi dispensada (Emenda 01); RLS, segredos no servidor, logs sem texto de mensagem e mídia privada continuam obrigatórios.
 - Chave, token ou senha só no segredo do servidor (Edge Functions). Nunca no repositório, no navegador, em log ou no grupo.
 - Não escreva no repositório nome, telefone, e-mail ou documento de aluno ou responsável.

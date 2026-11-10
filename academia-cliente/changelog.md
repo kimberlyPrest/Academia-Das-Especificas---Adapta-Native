@@ -1,5 +1,11 @@
 # Changelog — Academia das Específicas
 
+## 2026-11-10 — Ordem da fase 4
+
+- A SPEC-4-001 (Meta e MatriculaWeb de verdade) passa a ser a última da construção, antes só da SPEC-4-007. Ordem: 4-002, 4-003, 4-004, 4-005, 4-006, 4-001, 4-007.
+- O envio de documento (PDF) passa a ser construído na SPEC-4-006; até a 4-001 entrar, o áudio do WhatsApp vai para a equipe e o áudio da IA é provado na simulação.
+- Prazos do `fase.md` reordenados na mesma janela (11/11 a 25/11).
+
 ## 2026-11-10 — Fase 3 fechada, Emenda 01 e fase 4 liberada
 
 - Fase 3 fechada pela consultora: SPECs 3-001 a 3-007 construídas entre 28/10 e 09/11 (v0.0.77), provas automáticas verdes, teste humano dado como feito; vale também como aceite da fase 1. Arquivada em `05_entregas/fase-3/` (`fase.md` com as 25 tarefas `[x]` e o resultado, SPECs, índice e checklist CL-001 a CL-016).

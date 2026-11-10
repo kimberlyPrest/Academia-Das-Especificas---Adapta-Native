@@ -25,7 +25,7 @@
 
 ## Próximo passo
 
-1. SPEC-4-001, começando pelos testes com o número de teste da Meta.
+1. SPECs na ordem 4-002, 4-003, 4-004, 4-005, 4-006, 4-001 e 4-007. Os testes com o número de teste da Meta (SPEC-4-001) ficam por último na construção, para não travar o resto.
 2. Teste do cliente uma vez por SPEC, no fim dela.
 3. Virada com a consultora, pelo roteiro da SPEC-4-007.
 4. Só a consultora libera a fase 5.

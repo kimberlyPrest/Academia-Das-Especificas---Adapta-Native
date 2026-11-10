@@ -4,7 +4,7 @@
 **Status:** planejada  
 **Dono:** Academia (Hikari executa com o agente); aceite do Luiz  
 **Origem no escopo:** Emenda 01 (DEC-18); SPEC-3-002 (orçamento simulado, `quotes`); Manual de Boas Práticas p. 5 ("não envie o arquivo do orçamento sem dizer nada depois") e p. 9 (nome completo, e-mail e matérias antes do orçamento); exemplo bom de Asa Sul 1 (mensagem, validade ligada à condição de pagamento e pergunta)  
-**Degrau da solução:** construção sobre a SPEC-3-002 — acrescenta a gravação no MatriculaWeb, o PDF e o envio do arquivo (que a SPEC-4-001 já habilita).
+**Degrau da solução:** construção sobre a SPEC-3-002 — acrescenta a gravação no MatriculaWeb, o PDF e o envio do arquivo.
 
 ## Contexto e decisões fechadas
 
@@ -26,9 +26,9 @@ A atendente abre o lead que a IA qualificou, escolhe turma e específicas, clica
 
 ## Limites e dependências
 
-- **Inclui:** botões e estados na tela de orçamento; chamadas `interesse` e `OrcamentoPublico` na `quote-simulate` (ou função irmã `quote-save-mw`); colunas `mw_interesse_id` (lead), `mw_aluno_id`, `mw_orcamento_id`, `pdf_path` (quote); Edge Function `quote-pdf`; envio do documento com a mensagem; trava contra gravação dupla.
+- **Inclui:** botões e estados na tela de orçamento; chamadas `interesse` e `OrcamentoPublico` na `quote-simulate` (ou função irmã `quote-save-mw`); colunas `mw_interesse_id` (lead), `mw_aluno_id`, `mw_orcamento_id`, `pdf_path` (quote); Edge Function `quote-pdf`; envio de documento pelo `message-send` (subir o arquivo na Meta e mandar `type: document`, com o contrato da SPEC-4-001), provado com a Meta de mentira; envio do documento com a mensagem; trava contra gravação dupla.
 - **Fora de escopo:** IA enviando orçamento; contrato, pagamento ou matrícula no MatriculaWeb; outras rotas do MatriculaWeb.
-- **Entradas e pré-condições:** SPEC-4-001 (envio de documento e MatriculaWeb real); textos da tela Orçamento publicados (SPEC-4-003).
+- **Entradas e pré-condições:** textos da tela Orçamento publicados (SPEC-4-003). Não depende da SPEC-4-001: a Meta é de mentira nas provas, e o envio para o celular é testado na 4-001.
 - **Atores e permissões mínimas:** `attendant` e `unit_manager` da unidade do lead; os demais não veem.
 - **Risco e plano B:** MatriculaWeb com 429 ou 5xx: "Tentar de novo" ou orçamento manual; nada é enviado pela metade.
 - **Rollback:** desligar a gravação no console volta ao fluxo da SPEC-3-002 (só simulação).
@@ -88,7 +88,7 @@ A atendente abre o lead que a IA qualificou, escolhe turma e específicas, clica
 
 - **Quando:** quando todas as tasks vinculadas estiverem no ar
 - **Quem testa:** Luiz, com um atendente
-- **Passos:** abrir um lead `TESTE` qualificado; gravar o orçamento; gerar o PDF e comparar com o modelo; enviar para o celular da equipe; tentar enviar sem pergunta no fim; conferir o número no MatriculaWeb.
+- **Passos:** abrir um lead `TESTE` qualificado; gravar o orçamento; gerar o PDF e comparar com o modelo; enviar (para o celular da equipe, se o número de teste da SPEC-4-001 já estiver no ar; antes disso, conferir o envio na conversa); tentar enviar sem pergunta no fim; conferir o número no MatriculaWeb.
 - **Resultado esperado:** PDF bonito, valores certos, número oficial, mensagem com pergunta, lead em `Orçamento enviado`.
 - **Evidência do aceite:** "testei, pode seguir" do Luiz no grupo em resposta a este roteiro.
 
@@ -96,9 +96,9 @@ A atendente abre o lead que a IA qualificou, escolhe turma e específicas, clica
 
 | ID | Task | Dono | SPEC | Critério | Recorte da prova | Evidência esperada | Pré-condições | Status |
 |---|---|---|---|---|---|---|---|---|
-| pendente | Gravar o orçamento no MatriculaWeb e guardar o número | Academia das Específicas | SPEC-4-006 | CA-4-23, CA-4-26 | P4.6-01, P4.6-04 | saída do teste | SPEC-4-001 | ☐ |
+| pendente | Gravar o orçamento no MatriculaWeb e guardar o número | Academia das Específicas | SPEC-4-006 | CA-4-23, CA-4-26 | P4.6-01, P4.6-04 | saída do teste | SPEC-4-003 | ☐ |
 | pendente | Gerar o PDF do orçamento no modelo da Academia | Academia das Específicas | SPEC-4-006 | CA-4-24 | P4.6-02 | PDF | Task anterior | ☐ |
-| pendente | Enviar o PDF com a mensagem, a validade e a pergunta | Academia das Específicas | SPEC-4-006 | CA-4-25 | P4.6-02, P4.6-03, P4.6-05 | captura do celular + consulta | Task anterior | ☐ |
+| pendente | Enviar o PDF com a mensagem, a validade e a pergunta | Academia das Específicas | SPEC-4-006 | CA-4-25 | P4.6-02, P4.6-03, P4.6-05 | consulta (captura do celular na SPEC-4-001) | Task anterior | ☐ |
 
 ## Emendas
 
@@ -106,4 +106,4 @@ A atendente abre o lead que a IA qualificou, escolhe turma e específicas, clica
 
 | Data | Origem do sinal | Micro-spec/task | Motivo |
 |---|---|---|---|
-| | | | |
+| 2026-11-10 | Consultora | Ordem da fase | Deixa de depender da SPEC-4-001; o envio de documento passa a ser construído aqui |

@@ -15,6 +15,7 @@
   - O token da Meta continua só nos segredos das Edge Functions. Nada de token, telefone ou texto em log.
   - O áudio recebido também fica disponível para a IA (SPEC-4-004), que o entende direto.
   - O MatriculaWeb público não pede login e limita requisições por IP. A central continua chamando só pelo servidor.
+- **Ordem (emenda de 10/11):** esta SPEC é a **última da construção**; depois dela vem só a SPEC-4-007 (métricas e virada). Assim nada da fase espera o número de teste da Meta. O envio de documento (PDF) é construído na SPEC-4-006 e aqui é testado com o número de teste; o áudio que chega pelo WhatsApp passa a ir para a IA (SPEC-4-004) quando o `media-fetch` entrar.
 - **Bloqueios:** nenhum para construir. A operação com o número real fica para a SPEC-4-007 (GATE-03).
 
 ## Resultado observável
@@ -23,7 +24,7 @@ Do celular da equipe para o número de teste: um áudio, uma foto e um PDF chega
 
 ## Limites e dependências
 
-- **Inclui:** Edge Function `media-fetch` (baixa a mídia recebida); envio de `image` e `document` pelo `message-send`; marcação de lida; exibição de áudio, imagem e documento na conversa; teste ponta a ponta com o número de teste da Meta; teste da `quote-simulate` contra o MatriculaWeb real.
+- **Inclui:** Edge Function `media-fetch` (baixa a mídia recebida); envio de `image` pelo `message-send` (o `document` já vem da SPEC-4-006, aqui só é testado); marcação de lida; exibição de áudio, imagem e documento na conversa; teste ponta a ponta com o número de teste da Meta; teste da `quote-simulate` contra o MatriculaWeb real.
 - **Fora de escopo:** gravar orçamento no MatriculaWeb (SPEC-4-006); IA (SPEC-4-004); número real (SPEC-4-007).
 - **Entradas e pré-condições:** app da Academia no Meta for Developers com o número de teste e os celulares da equipe cadastrados como destinatários; consulta ao MatriculaWeb ligada no console.
 - **Saídas/artefatos:** `media-fetch`; bucket `midias`; colunas de arquivo em `messages` (`storage_path`, `mime`, `bytes`, `sha256`); componente de mídia na conversa; relatório do teste com a Meta e com o MatriculaWeb.
@@ -127,4 +128,4 @@ Do celular da equipe para o número de teste: um áudio, uma foto e um PDF chega
 
 | Data | Origem do sinal | Micro-spec/task | Motivo |
 |---|---|---|---|
-| | | | |
+| 2026-11-10 | Consultora | Ordem da fase | SPEC passa a ser a última da construção (antes só da SPEC-4-007), para não travar as outras; envio de documento vai para a SPEC-4-006 |

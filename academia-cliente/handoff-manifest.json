@@ -86,17 +86,17 @@
     {
       "path": "04_fase-atual/fase.md",
       "classification": "template-publico",
-      "sha256": "a12b2f7e3751625438de674bd4e4a1e36388105ebba54e4469a959e2a00d195c"
+      "sha256": "9851525cd179a02c5469a2389d17b785fe709f5b55ad720acb9f992337c1827b"
     },
     {
       "path": "04_fase-atual/specs/00-INDICE.md",
       "classification": "template-publico",
-      "sha256": "67b2270bc3be25a0151197d43614c2c8c674e14e74d2f0dcac290e868c112c48"
+      "sha256": "b7cf26d744452e7fd5d12f8d85d2417261b6ee91aa1e81cfe9b85043ec82fdf1"
     },
     {
       "path": "04_fase-atual/specs/spec-4-001-meta-real-midia-e-matriculaweb.md",
       "classification": "template-publico",
-      "sha256": "26f63c9bd590a76e67054579a1a1ac8b373d2291fa88a2cb9636e2f1f8bb4f7b"
+      "sha256": "7a22310874b863244ec721376d5c28dbf0dba95a0a1b828967ce19486bcc52f4"
     },
     {
       "path": "04_fase-atual/specs/spec-4-002-assumir-transbordo-e-fila.md",
@@ -111,7 +111,7 @@
     {
       "path": "04_fase-atual/specs/spec-4-004-atendente-virtual.md",
       "classification": "template-publico",
-      "sha256": "28b1a91e8a4f3293a6a2e5ad8c0d8238605ae5029b8e5436247c25e08b2a2454"
+      "sha256": "276f9b7b6c07afe51c2465aa0822daf2aac0e99bdadba6a7b872d81dc280718d"
     },
     {
       "path": "04_fase-atual/specs/spec-4-005-contatos-da-mesma-compra.md",
@@ -121,7 +121,7 @@
     {
       "path": "04_fase-atual/specs/spec-4-006-orcamento-matriculaweb-e-pdf.md",
       "classification": "template-publico",
-      "sha256": "8797982dd7a6119ff1b23d50fa91c294b6f817b900b53f47c9fb700c88ad747a"
+      "sha256": "8eb0dc6779024101aff06f8378d4589f89f07e1a08bfdb192b8a598a644308fe"
     },
     {
       "path": "04_fase-atual/specs/spec-4-007-metricas-e-virada.md",
@@ -291,12 +291,12 @@
     {
       "path": "STATUS.md",
       "classification": "template-publico",
-      "sha256": "2fd53a32280e65686331822d42aa9c63b1748de6017381f8b3faf638ae2116cb"
+      "sha256": "b31144aced3c361975e35db89efc0a47e7fe0cf83e9ff56a17c0ab6b32da7441"
     },
     {
       "path": "changelog.md",
       "classification": "template-publico",
-      "sha256": "267a936c7b841f8cbed378e4a12d8a4eaabf2a27cf88ea43561c405bd4514fe2"
+      "sha256": "b85470f8913879f094c143d424e2f908a64cb68132e1f31466f4784964a0e208"
     },
     {
       "path": "settings.json",
